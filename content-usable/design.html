@@ -850,53 +850,54 @@
       </section></section>
 
 	  <section>
-        <h3>Break Media into Chunks (Pattern)</h3>
+        <h3>メディアをチャンクに分ける（パターン）</h3>
           <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to easily navigate to what I want, take breaks and easily jump back a step if I do not follow or get distracted.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#media-user-story" aria-label="Media User Story">Media</a>.</p>
+        <blockquote><p>欲しいものに簡単にナビゲートし、休憩を取り、ついていけなかったり気が散ったりしたときには簡単に一歩前に戻りたい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#media-user-story">3.2.4 メディア</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-            <p>Provide a logical organization and structure that is easy to navigate.</p>
-            <p>Divide long pieces of media into segments that are:</p>
+            <p>論理的な構成と構造を提供し、ナビゲートしやすくする。</p>
+            <p>長いメディアは、以下のようなセグメントに分割する：</p>
           <ul>
-            <li>logical,</li>
-            <li>short,</li>
-            <li>labeled,</li>
-            <li>easy to identify, and</li>
-            <li>easy to reach or jump to.</li>
+            <li>論理的</li>
+            <li>短い</li>
+            <li>ラベル付けされた</li>
+            <li>特定しやすい</li>
+            <li>到達しやすい、または移動しやすい</li>
           </ul>
 
 
           </section><section><h5 class="coga-5">メリット</h5>
-          <p>Using a clear, logical structure, with headings allows users to orient and navigate through the content easily even if they get distracted or lose focus. This is particularly important for people with an attention impairment.</p>
-          <p>Providing short logical segments help users find and focus on a specific topic. If the user loses concentration they can find their place in the material and start again from the last point that they remember. This is especially important for educational content or instructions.</p>
-          <p>Chunking media also allows for each segment to be given a unique URI. It can then be easily referenced and shared.</p>
-          <p>For example:</p>
+          <p>明確で論理的な構造を見出しとともに使用することで、ユーザーは注意力が散漫になったり、集中力を欠いたりしても、現在位置を見定めて、コンテンツを容易にナビゲートすることができます。これは、特に注意力に障害のある方にとって重要なことです。</p>
+          <p>短い論理的なセグメントを提供することで、ユーザーは特定のトピックを見つけ、集中することができます。ユーザーが集中力を切らしてしまった場合でも、資料の中で自分が居る場所を見つけ、覚えている最後のポイントから再び始めることができます。これは、教育コンテンツや説明書において特に重要なことです。
+</p>
+          <p>また、メディアをチャンク（かたまり）に分けることで、各セグメントに一意のURIを付与することができます。これにより、簡単に参照したり、共有したりすることができます。</p>
+          <p>例えば：</p>
           <ul>
-            <li>Some videos can be naturally organized into chapters or segments.</li>
-            <li>A podcast can be split into segments rather than a single one-hour recording.</li>
+            <li>ビデオは、章やセグメントに自然に分割できることがある。</li>
+            <li>ポッドキャストは、1時間の録音を1つにまとめるのではなく、セグメントに分割できる。</li>
           </ul>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <ul>
-            <li><strong>Six minutes or less:</strong> Media should typically be divided into segments that are 6 minutes or less in duration.</li>
-            <li><strong>Navigable:</strong> Provide navigation to each media segment, and a unique, descriptive label.</li>
-            <li><strong>Logical order:</strong> Present the links to media segments in a logical order.</li>
-            <li><strong>Exception:</strong> Media that has no logical breaking points, do not need to be subdivided.</li>
+            <li><strong>6分以内：</strong> メディアは通常、6分以下のセグメントに分割するとよい。</li>
+            <li><strong>ナビゲート可能：</strong> 各メディアのセグメントへのナビゲーションを提供し、ユニークで説明的なラベルを付ける。</li>
+            <li><strong>論理的な順序：</strong> メディアのセグメントへのリンクを論理的な順序で表示する。</li>
+            <li><strong>例外：</strong> 論理的な区切りがないメディアは、細分化する必要はない。</li>
              </ul>
-             Note that if a transcript is available, it should be easy to find and navigate.
+             トランスクリプトがある場合は、簡単に見つけてナビゲートできるようにする必要があることに注意する。
 
 
           </section><section><h5 class="coga-5">事例</h5>
          <p><span class="use"></span><strong>用いる：</strong></p>
             <ol>
-              <li>Media that is divided into short logical segments. Each section is labeled and easy to get to. For example: A 30-minute video is divided into 5 sections, each with a descriptive link to play from that point onwards.</li>
+              <li>短い論理的なセグメントに分割されたメディア。各セクションにはラベルが貼られ、簡単にアクセスできるようになっています。例えば、30分のビデオを5つのセクションに分割し、それぞれに説明のリンクを貼って、その時点から再生できるようにする。</li>
             </ol>
                     <p><span class="avoid"></span><strong>避ける：</strong></p>
 
             <ol>
-              <li>Media that is not divided into segments. For example: A 30-minute video contains no subdivisions or descriptions of sections. A user has to play it from the beginning or guess starting locations within the video.</li>
-              <li>Media sections that are not labeled.</li>
-              <li>Media sections that are not linked to in the summary or table of contents.</li>
+              <li>分割されていないメディア。例えば、30分の動画で、分割されていないか、セクションの説明がない。ユーザーは最初から再生するか、動画内での開始位置を推測しなければならない。</li>
+              <li>メディア内でラベル付けされていないセクション。</li>
+              <li>メディアの概要や目次からリンクされてないセクション。</li>
             </ol>
 
       </section></section>
