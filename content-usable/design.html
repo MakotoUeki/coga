@@ -300,57 +300,57 @@
       </section></section>
 
       <section>
-        <h3>Make Each Step Clear (Pattern)</h3>
-          <section><h5  class="coga-5">User Need</h5>
-          <blockquote><p>I need to recognize where I am in the architecture of the web site, application, or multi-step process, even after I get distracted.</p></blockquote>
-          <p>関連するユーザーストーリー： <a href="#clear-purpose-user-story" aria-label="Clear Purpose User Story">Clear Purpose</a>.</p>
-		  </section><section class="wtd"><h5  class="coga-5">What to Do</h5>
-        <p> Provide breadcrumbs, a “how I got here” button, or heading to help the user orientate themselves inside a site or task. </p>
+        <h3>各ステップを明確にする（パターン）</h3>
+          <section><h5 class="coga-5">ユーザーニーズ</h5>
+          <blockquote><p>気が散った後でも、Web サイト、アプリケーション、またはマルチステップ プロセスのアーキテクチャの中で自分がどこにいるかを認識したい。</p></blockquote>
+          <p>関連するユーザーストーリー： <a href="#clear-purpose-user-story">3.1.1 明確な目的</a></p>
+		  </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
+        <p>ユーザーがサイトやタスクの中での現在位置を確認できるように、パンくずリストや「ここにたどり着いた経緯（"how I got here"）」ボタン、見出しなどを用意します。</p>
         <p>
-          In a multi-step process, this includes showing:
+          複数のステップがあるプロセスでは、以下のようなものを示します：
         </p>
         <ul>
-          <li>the steps completed, </li>
-          <li>the current step,</li>
-          <li>the steps pending, and</li>
-          <li>any important choices.</li>
+          <li>完了したステップ</li>
+          <li>現在のステップ</li>
+          <li>保留中のステップ</li>
+          <li>すべての重要な選択</li>
         </ul>
           </section><section><h5  class="coga-5">メリット</h5>
           <p>
-            This pattern helps a user who loses focus, forget what they are doing or gets distracted reorient themselves to their current activity. Clearly indicating the current location and progress helps the user continue after they lose focus without reading a great deal of content or restarting.
+            このパターンは、集中力を失ったり、何をしているのか忘れてしまったり、気が散ってしまったユーザーが、現在のアクティビティでの現在位置を確認するのに役立ちます。現在の位置と進捗状況を明確に示すことで、ユーザーが集中力を失った後、大量のコンテンツを読んだり、再起動したりすることなく、継続することができます。
           </p>
-          <p>Providing information about the steps that need to complete a task helps users determine if they can successfully finish the task. This is especially important for users who often find processes difficult to complete.</p>
-          <p>Examples include:</p>
+          <p>タスクを完了するために必要なステップについての情報を提供することは、ユーザーがそのタスクを正常に完了できるかどうかを判断するのに役立ちます。これは、プロセスを完了するのが難しいと感じることが多いユーザーにとって、特に重要なことです。</p>
+          <p>以下のような例が挙げられます。</p>
           <ul>
             <li>
-              Someone with <a>early stage dementia</a> is interrupted in their task or loses focus and then cannot remember what they were doing. By seeing the bread crumbs they can remind themselves where they are and continue their task.
+              <a>初期の認知症</a>の人は、作業を中断したり、集中力を失ったりすると、自分が何をしていたかを思い出せなくなる。パンくずリストを見ることで、自分がどこにいるのかを思い出し、作業を続けることができる。
             </li>
             <li>
-              Someone with an attention disability gets distracted and then needs to pick up where they left off.
+              注意障害のある人は、注意散漫になったときには、どこで中断してしまったのかを把握する必要がある。
             </li>
             <li>
-              Someone with a processing difficulty is not sure if this application has too many steps and if they will manage. By seeing they are half-way through they can gauge if they can cope with the entire process.
+              処理能力に問題のある人は、アプリケーションにあまりにも多くのステップがあるかどうか、自分が処理できるかどうかについて、確信が持てない。自分が途中まで進んでいるのを見ることで、プロセス全体に対処できるかどうかを判断できる。
             </li>
           </ul>
           </section><section><h5 class="coga-5">事例</h5>
         <p><span class="use"></span><strong>用いる：</strong></p>
           <ol>
-            <li>Breadcrumbs that indicate the current step in the process, important choices, as well as past and future steps.</li>
-            <li>Headings that clarify exactly were the user is inside the content.</li>
-            <li>A “how I got here” button. When the user clicks the button they receive orientation information about: <ul>
-								<li>the page, </li>
-								<li>how they got here, and </li>
-								<li>where they are inside the content.</li>
+            <li>プロセス内での現在のステップ、重要な選択、および過去と未来のステップを示すパンくずリスト</li>
+            <li>ユーザーがコンテンツ内のどの位置にいるのかを明確にする見出し</li>
+            <li>「How I got here」ボタン。ユーザーがこのボタンをクリックすると、以下のような現在位置に関する情報が表示されます：<ul>
+								<li>そのページ</li>
+								<li>どのようにしてここに来たのか</li>
+								<li>コンテンツ内のどこにいるか</li>
 							</ul>
 						</li>
           </ol>
                     <p><span class="avoid"></span><strong>避ける：</strong></p>
 
            <ol>
-             <li>Completed steps and choices that are hard to find and check. For example:
+             <li>見つけにくく、チェックしにくい、完了したステップや選択肢。例えば：
              <ul>
-              <li>Placing completed steps on previous pages.</li>
-              <li>Placing selected choices in a control that hides and reveals content (such as an accordion).</li>
+              <li>完了したステップを前のページに配置する</li>
+              <li>コンテンツを隠したり見せたりするコントロール（アコーディオンなど）の中に、選択されたものを配置する</li>
             </ul></li>
            </ol>
 
@@ -361,10 +361,10 @@
         <h3>
           Clearly Identify Controls and Their Use (Pattern)
         </h3>
-          <section><h5  class="coga-5">User Need</h5>
+          <section><h5 class="coga-5">ユーザーニーズ</h5>
         <blockquote><p>自分の選択肢と実行できるタスクを理解する必要があり、アクションを完了するために操作できるコントロールを特定したい。</p></blockquote>
         <p>関連するユーザーストーリー： <a href="#clear-operation-user-story" aria-label="Clear Operation User Story">Clear Operation</a>.</p>
-        </section><section class="wtd"><h5  class="coga-5">What to Do</h5>
+        </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>Use a clear and recognizable design for controls. Make it clear what elements are controls and how to use them.</p>
 
 		    <p>This includes:</p>
