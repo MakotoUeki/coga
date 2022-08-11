@@ -803,50 +803,48 @@
 
       <section>
         <h3>
-          Make it easy to find the most important actions and information on the page (Pattern)
+          ページ上で最も重要なアクションや情報を見つけやすくする（パターン）
         </h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to reach important information and the controls I need without scrolling or carrying out other actions. They are not hidden or off screen.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#findable-user-story" aria-label="Findable User Story">Findable</a>.</p>
+        <blockquote><p>スクロールしたり他の操作をしたりせずに、重要な情報や必要なコントロールに到達したい。それらは隠されていたり、画面の外にあったりしない。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#findable-user-story">3.2.1 探索可能</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-        <p>Make key content visually stand out. Key content should be visible to users without needing to scroll the page or hover over content. This includes:</p>
+        <p>重要なコンテンツを視覚的に目立たせます。 重要なコンテンツは、ページをスクロールしたり、コンテンツにホバーしたりしなくても、ユーザーに見えるようにする必要があります。これには以下が含まれます：</p>
           <ul>
-            <li>critical tasks and the controls needed to complete them,</li>
-            <li>interactions for critical features (e.g. login forms, send buttons), and</li>
-            <li>important information (e.g. health warnings or information that can affect safety).</li>
+            <li>重要なタスクと、それを完了するために必要なコントロール</li>
+            <li>重要な機能のためのインタラクション（例：ログインフォーム、送信ボタン）</li>
+            <li>重要な情報（健康への警告や安全に影響を与える情報など）</li>
           </ul>
 
           </section><section><h5 class="coga-5">メリット</h5>
-          <p>Slow readers, people with impaired <a>executive function</a>, impaired memory, and other <a>cognitive and learning disabilities</a> may not be able to find the information and features on a page. For example, content that requires a lot of reading or the use of the scroll bar or pointer hovers may be hard to find.  Other users cannot find content that requires paging through different screens </p>
-          <p>Users who are unfamiliar with the page (or common design patterns) may rely on prominent visual styling aids to find important information. A clear heading structure can also help with this by reducing what needs to be read.</p>
-          <p>For example, an elementary school publishes a weekly newsletter with stories, activities,   and important announcements. One important announcement is that school will end early one day. The newsletter has less important information before the early school dismissal, and does not have a warning symbol next to the important information. A parent who reads slowly may need to stop before the important information and does not find out that the school is ending early one day. The parent is not home for the child on time.</p>
-          <p>In another example, a user is writing a comment, but the send button is not visible when the focus is on the text area. As a result, she cannot see how to send her feedback. The company will then not receive any feedback from groups who unable to find the feedback button.</p>
+          <p>読むのが遅い人、<a>遂行機能</a>障害、記憶障害、その他の<a>認知障害や学習障害</a>のある人は、ページ上の情報や機能を見つけることができない場合があります。 例えば、たくさん読む必要があるコンテンツや、スクロールバーやマウスポインタのホバーを使う必要があるコンテンツは、見つけにくい場合があります。いろいろな画面を見て回る必要があるコンテンツを見つけることができないユーザーもいます。</p>
+          <p>ページ (または一般的なデザイン パターン) に慣れていないユーザーは、重要な情報を見つけるために目立つ視覚的なスタイリング補助に依存する場合があります。 明確な見出し構造も、読む必要があるものを減らすことでこれに役立ちます。</p>
+          <p>例えば、ある小学校では、毎週ニュースレターを発行していて、物語、活動、重要なお知らせを掲載しています。重要なお知らせの1つに、ある日学校が早く終わるというものがあります。ニュースレターには、早期下校に関する情報の前に重要ではない情報があり、重要な情報の横に警告のシンボルもありません。ゆっくり読む保護者は、重要な情報の前に読むのをやめなければならず、ある日学校が早く終わることに気づかないかもしれません。親は子どもが帰宅する時間に家にいないことになります。</p>
+          <p>別の例では、ユーザーがコメントを書いているのですが、テキストエリアにフォーカスが当たっていると送信ボタンが表示されません。その結果、ユーザーはフィードバックを送信する方法がわからなくなります。この場合、会社は送信ボタンを見つけられない人たちからは、フィードバックを受け取らないでしょう。</p>
 
           </section><section><h5 class="coga-5">詳細</h5>
-          <p>The amount of page visible before scrolling is dependent on a wide range of factors such as physical device size and resolution. Where possible, use site statistics to understand what technology users are using. Keep this in mind when designing the page.</p>
-          <p>Consider the most constrained user experience first (e.g., a 240px wide mobile phone) and then design upwards from there. This will account for the widest range of scenarios. Adopting responsive development practices can improve the flexibility of the page for more devices and situations.</p>
+          <p>スクロールする前に見えるページ（コンテンツ）の量は、物理的なデバイスのサイズや解像度など、さまざまな要因に左右されます。可能であれば、サイトの統計情報を使って、ユーザーがどのような技術を使っているかを把握しましょう。このことを念頭に置いて、ページをデザインしてください。</p>
+          <p>最も制約の多いユーザーエクスペリエンス（例：幅240pxの携帯電話）を最初に考慮し、そこからターゲットを拡げて設計していきます。そうすることで、最も幅広いシナリオを考慮することができます。レスポンシブ開発の手法を採用することで、より多くのデバイスや状況に対するページの柔軟性を向上させることができます。</p>
 
           </section><section><h5 class="coga-5">まずはじめに</h5>
           <p>
-            Make it easy to find the most important things on the page. Identify
-            key content and its placement early in the design process.
+            ページ内で最も重要なものを簡単に見つけられるようにする。デザインプロセスの早い段階で、重要なコンテンツとその配置を明確にする。
           </p>
           <p>
-            Space at the top of the document is most likely to be visible to
-            users without scrolling. Place key content at the top of the page to give the best experience to the widest range of users.
+            ドキュメントの上部にあるスペースは、スクロールせずにユーザーに見える可能性が最も高い。重要なコンテンツはページの最上部に配置し、最大限に広範囲のユーザーにベストな体験を提供する。
           </p>
 
 
           </section><section><h5 class="coga-5">事例</h5>
           <p><span class="use"></span><strong>用いる：</strong></p>
             <ol>
-              <li>Important controls and features that are visible without the need to scroll the page.</li>
-              <li>Important controls, such as a submit button, that stand out from less important links and buttons.</li>
-              <li>Critical information (such as information about health and safety) that is highlighted and visible without scrolling.</li>
-              <li>Critical information that visually stands out from other less important information on the page.</li>
+              <li>重要なコントロールや機能は、ページをスクロールする必要なく見えるようにする。</li>
+              <li>送信ボタンなどの重要なコントロールは、重要度の低いリンクやボタンよりも目立たせる。</li>
+              <li>重要な情報（健康や安全に関する情報など）を強調表示して、スクロールしなくても見えるようにする。</li>
+              <li>重要な情報は、ページ上の他の重要度の低い情報から視覚的に際立たせる。</li>
             </ol>
             <p><span class="avoid"></span><strong>避ける：</strong></p>
-            <ol><li>Important information, controls, or features that the user cannot find straight away. For example: Warnings about user safety that are not visually distinct and above the fold.</li></ol>
+            <ol><li>ユーザーがすぐに見つけることができない重要な情報、コントロール、または機能。例えば、ユーザーの安全に関する警告が、視覚的にはっきりせず、ページ上部に表示されていない。</li></ol>
 
 
       </section></section>
