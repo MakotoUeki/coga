@@ -1259,49 +1259,49 @@
       </section></section>
 
       <section>
-        <h3>Include Symbols and Letters Necessary to Decipher the Words (Pattern)</h3>
+        <h3>言葉を読み解くために必要なシンボルや文字を入れる（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>単語を音読するために必要なアクセント、文字、および付加記号を含む単語が必要である。 This is often needed for speech synthesis and phonetic readers in languages like Arabic and Hebrew.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#clear-language-written-or-audio-user-story" aria-label="Clear Language User Story">Clear Language</a>.</p>
+        <blockquote><p>単語を音読するために必要なアクセント、文字、および付加記号を含む単語が必要である。これは、アラビア語やヘブライ語などの言語の音声合成や音声リーダーに必要であることが多い。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#clear-language-written-or-audio-user-story" >3.3.1 明快な言葉</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
-          Include vowels, letters, or diacritic marks that users need to decipher words correctly.
-		  This is often needed in languages like Arabic and Hebrew.
+          ユーザーが単語を正しく解読するために必要な母音、文字、または発音区分符号を含めます。これは、アラビア語やヘブライ語などの言語で必要とされることが多い。
         </p>
 
           </section><section><h5 class="coga-5">メリット</h5>
- 		<p>Some languages, such as Hebrew and Arabic, have optional vowels and diacritic marks. Without these marks, most words with the same characters have between two (Hebrew) and seven (Arabic) different ways of being pronounced with different meanings. Most readers can read the word based on the context, and use their visual memory to guess the correct pronunciation. People with impaired visual memory, slow readers, and text-to-speech may often guess the incorrect term or pronunciation.</p>
+ 		<p>ヘブライ語やアラビア語などの一部の言語では、オプションの母音と発音区分符号があります。これらの記号がない場合、同じ文字を持つほとんどの単語は、2つ（ヘブライ語）から7つ（アラビア語）の異なる意味を持つ発音があります。ほとんどの読者は、文脈から単語を読み、視覚的な記憶から正しい発音を推測することができます。視覚的な記憶に障害がある人、読むのが遅い人、音声合成による読み上げは、間違った言葉や発音を推測することが多いかもしれません。</p>
 
-		<p>For example, a user with a language disability is trying to sound out a word. They guess three different pronunciations until they find one that makes sense. Unfortunately, many people with language impairments cannot work out the meaning as words out of context may only provide an idea rather than a specific meaning. Text-to-speech often requires these characters to speak the correct word.</p>
+		<p>例えば、言語障害のあるユーザーが、ある単語を発音しようとしているとします。このような場合、3つの異なる発音を思い浮かべてから、意味が通じる1つを見つけます。残念ながら、文脈のない言葉は、具体的な意味ではなく、アイデアを与えるのみなので、言語障害がある人の多くは意味を理解できません。音声合成では、多くの場合、これらの文字が正しい単語を話すことを求めます。
+</p>
 
-		<p>Note that not all diacritic marks are necessary to pronounce the word correctly. Only letters and diacritic marks that are necessary for the unambiguous pronunciation need to be included.</p>
+		<p>ただし、単語を正しく発音するために、すべての発音記号が必要なわけではありません。曖昧さのない発音に必要とされる文字と発音記号のみ必要となります。</p>
 
           </section><section><h5 class="coga-5">詳細</h5>
-          <p>Words can be deciphered and pronounced to have the correct meaning.</p>
+          <p>単語を解読して発音することで、正しい意味を持つようになります。</p>
 
           </section><section><h5 class="coga-5">まずはじめに</h5>
           <p>
-            In Hebrew add additional Yud (י) and Vav (ו) that enables correct pronunciation.
+            ヘブライ語では、正しい発音を可能にするためにYud (י)とVav (ו)を追加する。
 
           </p>
 
           </section><section><h5 class="coga-5">事例</h5>
           <p><strong><span class="use"></span>用いる：</strong></p>
             <ol>
-            <li>Additional letters or diatric marks that enable correct pronunciation. For example:
+            <li>正しい発音を可能にする追加の文字または発音記号。 例えば：
 
               <ul>
-                <li>He says: <span dir = "rtl"  lang="he">אֹמַר  /אומר</span> (Hebrew)</li>
-                <li >He wrote: <span dir = "rtl"  lang="ar"> كَتَب</span> (Arabic)</li>
-                <li >Books: <span dir = "rtl"  lang="ar">كُتُبْ</span> (Arabic)</li>
-                <li>It was written: <span dir = "rtl"  lang="ar">كُتِبَ</span> (Arabic)</li>
+                <li>彼は言う: <span dir = "rtl"  lang="he">אֹמַר  /אומר</span> (Hebrew)</li>
+                <li >彼は書いた: <span dir = "rtl"  lang="ar"> كَتَب</span> (Arabic)</li>
+                <li >書籍: <span dir = "rtl"  lang="ar">كُتُبْ</span> (Arabic)</li>
+                <li>それは書かれていた: <span dir = "rtl"  lang="ar">كُتِبَ</span> (Arabic)</li>
               </ul>
             </li>
             </ol>
 
             <p><span class="avoid"></span><strong>避ける：</strong></p>
             <ol>
-              <li>Words without needed letters or diatric marks so the user must guess the pronunciation based on memory and context. For example:
+              <li>必要な文字や記号がないため、ユーザーは記憶と文脈に基づいて発音を推測する必要がある単語。例えば：
                 <ul>
                 <li><span dir = "rtl"  lang="he">אמר</span> (Hebrew)</li>
                 <li><span dir = "rtl"  lang="ar">كتب</span> (Arabic)</li>
