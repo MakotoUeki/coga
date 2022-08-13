@@ -1505,45 +1505,43 @@
       </section></section>
 
     <section>
-        <h3>Explain Implied Content (Pattern)</h3>
+        <h3>暗示された内容を説明する（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to understand the meaning of the text. I do not want unexplained, implied, or ambiguous information because I may misunderstand jokes and metaphors.</p></blockquote>
-         <p>関連するユーザーストーリー： <a href="#visual-presentation-user-story" aria-label="Visual Presentation User Story">Visual Presentation</a>.</p>
+        <blockquote><p>テキストの意味を理解したい。ジョークやメタファーを誤解する可能性があるので、説明されていない、暗示されている、または曖昧な情報は欲しくない。</p></blockquote>
+         <p>関連するユーザーストーリー： <a href="#visual-presentation-user-story">3.3.2 視覚的な提示</a>.</p>
          </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-         <p>Provide definitions or explanations for implied or ambiguous information such:</p>
+         <p>次のような暗示的な情報や曖昧な情報に対して、定義や説明を提供する：</p>
         <ul>
-            <li>body gestures,</li>
-            <li>emotions,</li>
-
-            <li>jokes,</li>
-
-            <li>sarcasm,</li>
-            <li>metaphors and simile, and</li>
-            <li>facial expressions.</li>
+            <li>身振り手振り</li>
+            <li>感情</li>
+            <li>ジョーク</li>
+            <li>皮肉</li>
+            <li>隠喩と比喩</li>
+            <li>顔の表情</li>
             </ul>
-          <p>These definitions and explanations should be provided in text close to the implied content or in the markup (see best practices).</p>
+          <p>これらの定義や説明は、暗示的なコンテンツの近くにあるテキストか、マークアップで提供されるべきです（ベストプラクティスを参照）。</p>
 
 
           </section><section><h5 class="coga-5">メリット</h5>
-             		<p>Implied content can be difficult for some users because the meaning is not clear. This includes abstract content, sarcasm, or metaphors. The meaning is not clear and requires the user to have additional knowledge to understand.</p>
+             		<p>暗示的な内容は、意味が明確でないため、一部のユーザーにとって困難な場合があります。これには、抽象的な内容、皮肉、または比喩が含まれます。意味が明確でないため、ユーザーに理解するための知識を要求します。</p>
 
-            <p>When using body gestures, emotional communication, and facial expressions as the only way to communicate something, it is important to include this in another way to ensure all users understand. One way this can be done is through supplementary text.</p>
-            <p>For example, an image is used in a social media post to communicate a person’s true feelings. Some individuals may not be able to understand the emotion being demonstrated by the image. They miss the point the author is trying to make without more context.</p>
-            <p>Similarly, a research study asked <a>autistic</a> people to watch a movie that had a lot of implied content. They were watching the actors’ mouths, but information such as sarcasm is communicated by their facial expressions. When asked what happened in the movie, some missed the implied communication and the point of the dialogue.</p>
+            <p>身振り手振り、感情表現や顔の表情だけで何かを伝える場合、すべてのユーザーが理解できるように、別の方法でこれを含めることが重要です。その一つの方法として、補足テキストがあります。</p>
+            <p>例えば、ソーシャルメディアの投稿で、ある人の本音を伝えるために画像を使用するとします。しかし、その画像が示す感情を理解できない人がいるかもしれません。より多くの文脈がなければ、作者が伝えようとしていることを見逃してしまうのです。</p>
+            <p>同様に、ある研究では、自閉症の人々に、暗示的な内容が多く含まれる映画を見てもらいました。彼らは俳優の口元を見ていたが、皮肉などの情報は彼らの表情によって伝えられていた。映画の中で何が起こったかを尋ねると、暗示的なコミュニケーションと台詞のポイントを見逃していた人がいました。</p>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <p>これには以下が含まれます：</p>
-          <ul><li>graphics used alone to identify that something is important, or should be remembered,</li>
-          <li>sarcasm in text, and</li>
-          <li>animations used to add importance or communicate something contrary to the literal meaning of the paired text.</li></ul>
-		<p>Note that standard emojis often come with an explanation or alternative text.</p>
+          <ul><li>何かが重要であること、または記憶されるべきことを示すために単独で使用されるグラフィック。</li>
+          <li>テキスト中の皮肉</li>
+          <li>重要性を付加したり、対になるテキストの文字通りの意味とは異なることを伝えるために使用されるアニメーション。</li></ul>
+		<p>なお、標準的な絵文字には、説明や代替テキストが付属していることが多い。</p>
 
           </section><section><h5 class="coga-5">事例</h5>
          <p><span class="use"></span><strong>用いる：</strong></p>
-          <ol><li>Supplementary text such as (sarcasm) when writing sarcastic comments in emails and social media posts to help readers understand the intent of the communication. </li>
-		  <li>Personalization semantics (once it is mature) to add non-literal text alternatives. See [[personalization-semantics-help-1.0]].</li></ol>
+          <ol><li>読者がコミュニケーションの意図を理解できるように、メールやソーシャルメディアへの投稿で皮肉を書く際に付与する「（皮肉）」などの補足テキスト。</li>
+		  <li>（将来的に）文字通りではないテキストの代替を追加するパーソナライゼーション・セマンティクス。[[personalization-semantics-help-1.0]] を参照のこと。</li></ol>
       <p><span class="avoid"></span><strong>避ける：</strong></p>
-        <ol><li>Unexplained metaphors and similes. For example: “You are my sunshine.” rather than saying “You make me happy.”</li></ol>
+        <ol><li>説明されていない比喩や類語。例えば、「あなたは私を幸せにしてくれる」ではなく、「あなたは私の太陽です」。</li></ol>
     </section></section>
 
       <section>
