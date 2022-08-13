@@ -1206,77 +1206,62 @@
       </section></section>
 
       <section>
-        <h3>Use Clear, Unambiguous Formatting and Punctuation (Pattern)</h3>
+        <h3>明快で曖昧さのないフォーマットと句読点を用いる（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need words to include accents, characters, and diacritics that are necessary to phonetically read the words.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#clear-language-written-or-audio-user-story" aria-label="Clear Language User Need">Clear Language</a>.</p>
+        <blockquote><p>単語を音読するために必要なアクセント、文字、および付加記号を含む単語が必要である。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#clear-language-written-or-audio-user-story">3.3.1 明快な言葉</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
-          Use punctuation and format for text, numbers, and symbols that reduce ambiguity and improve
-          readability and comprehension.
+          文章、数字、記号などの句読点や書式は、曖昧さを減らし、読みやすさと理解力を高めるようにする。
         </p>
 
           </section><section><h5 class="coga-5">メリット</h5>
-            <p>For some readers, decoding words, numbers, and symbols does not happen automatically and can be demanding on working memory and <a>executive functions</a>. If they find content too demanding they are at risk of losing its meaning.</p>
-            <p>Some users may use assistive technology or personalization tools to help understand content such as text-to-speech that reads aloud the content. However, sometimes the punctuation or format makes it more likely that the screen reader will read it incorrectly. For example, Roman numerals may be read as text.</p>
-            <p>A user with a learning disability may be unable to manipulate letters, numbers, and words to correct mistakes that occur because of formatting or punctuation errors. They also need to focus on understanding the meaning of the content in order to use it.</p>
-            <p>For example, a user with a communication disability may listen to content using text-to-speech. If the content is phrased correctly, they can understand it. Sometimes they hear content read incorrectly or skipped, particularly numbers and symbols, and they cannot understand it. If text, numbers or symbols are in an unfamiliar layout, the user may become confused.</p>
-            <p>In contrast, a blind person listening to the content, is likely to be able to figure out the correct meaning even when words are not pronounced correctly. However, the word manipulations necessary to work out the correct meaning are not achievable by someone with a communications or language impairment.</p>
+            <p>読者によっては、単語、数字、記号の解読が自動的に行われず、ワーキングメモリや<a>遂行機能</a>に負荷がかかる場合があります。読者はコンテンツに負荷を感じ過ぎると、その意味を見失うリスクがあります。</p>
+            <p>ユーザーの中には、コンテンツを理解する補助として、コンテンツを読み上げる音声合成による読み上げのように、支援技術やパーソナライゼーションツールを使用する人もいます。しかし、句読点や書式によって、スクリーン・リーダーが間違って読んでしまう可能性が高くなることがあります。たとえば、ローマ数字がテキストとして読み上げられることがあります。</p>
+            <p>学習障害があるユーザーは、書式や句読点のエラーのために起こるエラーを修正するために、文字、数字、単語の間違いを変更できないことがあります。また、コンテンツを利用するためには、その意味を理解することに重点を置く必要があります。</p>
+            <p>例えば、コミュニケーションに障害があるユーザーは、音声合成による読み上げでコンテンツを聴くことができます。コンテンツが正しく読み上げられれば、理解することができます。しかし、コンテンツ、特に数字や記号が誤って読み上げられたり、読み飛ばされたりすると、理解できないことがあります。また、文字や数字、記号が見慣れないレイアウトで表示されている場合、ユーザーは混乱することがあります。</p>
+            <p>一方、コンテンツを聞いている全盲の人は、言葉が正しく発音されなくても、正しい意味を把握できる可能性が高いです。しかし、正しい意味を理解するために必要な言葉の操作（変換）は、コミュニケーションや言語に障害がある人には困難です。</p>
 
 
           </section><section><h5 class="coga-5">詳細</h5>
-          <p><strong>Use language tags. </strong>Language tags are the key means to achieve the goal of unambiguous text formatting. See HTML [[HTML]] language tags and <a href="https://tools.ietf.org/html/bcp47">BCP 47 Language Codes</a>.</p>
+          <p><strong>言語タグを使用する </strong>　言語タグは、曖昧さのないテキストフォーマットという目標を達成するための重要な手段です。HTML [[HTML]] の言語タグ（訳注：lang属性）と<a href="https://tools.ietf.org/html/bcp47">BCP 47の言語コード</a>を参照してください。</p>
           <p>
-            <strong>Use punctuation correctly</strong> for the language you are
-            writing in, as it will affect how the stress and intonation (known
-            as prosody) patterns from the text are heard, when converted into
-            speech. For example, in English, commas and semicolons will result
-            in a short pause in the speech, whereas a hyphen - will generally be
-            ignored. Question marks, exclamation marks, and speech marks can
-            result in changes in intonation, such as a rise in the pitch of the
-            voice.
+            あなたが書いている言語に応じて<strong>句読点を正しく使用する</strong> なぜなら、テキストから音声に変換されたときに、ストレスやイントネーション（プロソディと呼ばれる）のパターンが、テキストがどのように読み上げられるかに影響するためです。例えば、英語の場合、コンマやセミコロンは短い一時停止を作りますが、ハイフン - は通常無視されます。クエスチョンマーク、エクスクラメーションマーク、スピーチマークは、声の高さが上がるなど、イントネーションを変化させることがあります。
+          </p>
+          <p>文章で<strong>ローマ数字や見慣れない記号を使用することは、できる限り避けてください</strong>。　これらは読み手を混乱させ、音声合成ツールで間違って読み上げられる可能性があります。これらの記号が必要な場合は、MathMLや省略形の拡張などのテクニックを使って正しくマークアップして、追加サポートを提供するようにします。ローマ数字は、個々の文字として読まれる可能性が高いので、単独で使用する場合は大文字で表示する必要があります。
           </p>
           <p>
-            <strong>Avoid the use of Roman Numerals and unfamiliar symbols</strong>
-            in text were possible. These can confuse readers and are likely to
-            be read incorrectly by text-to-speech tools. If these symbols are
-            necessary then ensure they are marked up correctly, using techniques
-            such as MathML and abbreviation expansions to provide additional
-            support. Roman Numerals should be presented in upper case if used in
-            isolation as they are likely to be read as individual letters.
-          </p>
-          <p>
-            Long numbers may be read as single digits or phrased as a single number. This is a particular problem for phone numbers or zip codes. While it is difficult to control exactly how these numbers are read aloud, content creators can help by:
+            長い数字は、1桁の数字として読まれたり、1つの数字として表現される可能性があります。これは、電話番号や郵便番号で特に問題となります。これらの数字がどのように読み上げられるかを正確にコントロールすることは困難ですが、コンテンツ制作者は次のような方法で支援することができます：
           </p>
           <ul>
-            <li> Displaying the content of the number and using HTML semantics to ensure users and assistive technologies are aware of the number’s purpose. In addition, the following recommendations can assist with improving text-to-speech rendering: </li>
+            <li>ユーザーや支援技術がその数字の目的を認識できるようにするため、数字のコンテンツを表示して、HTMLのセマンティクスを利用します。さらに、音声合成による読み上げの改善には、次のような推奨事項があります：</li>
             <li>
-              For phone numbers, use the correct layout for the locality of the phone number and ensure users can select the whole phone number (including area code), so that text-to-speech voices can recognize the format and phrase it correctly.
+              電話番号の場合は、その地域の電話番号に適したレイアウトを使用し、ユーザーが電話番号全体（市外局番を含む）を選択できるようにすることによって、音声合成がそのフォーマットを認識し、正しく読み上げることが可能になります。
             </li>
             <li>
-              For Zip / Postal codes, include state or address information close to the number so that speech voices can expand known abbreviations (such as state names) and listeners can perceive the context.
+              郵便番号の場合は、州や住所の情報を番号の近くに含めると、音声合成による読み上げが既知の略語（州名など）を展開でき、聞き手は文脈を認識することができます。
             </li>
             <li>
-              When writing long numbers, consider what separators will be familiar to your readers and how it will be read aloud. In general, English speaking countries will use commas between thousands and a period as the decimal separator whereas German and other European countries do the opposite. For example, 1,245 would represent one thousand two hundred and forty-five in English, but one point two four five in German. Text-to-speech output will assume the separators are being used in the format of the language of its voice. If this does not match the content, then listeners can become easily confused. While replacing thousand separators with a space has become a common convention to avoid confusion, it leads to difficulties with text-to-speech with long numbers being read out in a disjointed fashion. For example, 120 034 943 can be read as one hundred and twenty, zero three four, nine hundred and forty-three.
+              W長い数字を書くときは、どのような区切り文字が読者に馴染みがあるか、どのように読み上げられるかを考慮しましょう。一般的に英語圏では、1,000単位でカンマ、小数点の区切りにはピリオドを使用しますが、ドイツや他のヨーロッパ諸国ではその逆です。例えば、1,245は英語ではone thousand two hundred and forty-five ですが、ドイツ語では one point two four five です。音声合成の出力は、セパレータがその音声の言語のフォーマットで使用されていると仮定します。これがコンテンツと一致しない場合、聞き手は容易に混乱することがあります。1,000単位の区切り文字をスペースに置き換えることは、混乱を避けるための一般的な慣例になっていますが、長い数字をバラバラに読み上げる音声合成では、困難が生じます。例えば、120 034 943は、"one hundred and twenty, zero three four, nine hundred and forty-three" と読み上げられる可能性があります。
             </li>
           </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
           <p><span class="use"></span><strong>用いる：</strong></p>
             <ol>
-              <li>Dates that can be read and understood in any culture. <p>Consider how you write dates, because once again the text-to-speech will use the format associated with the language of the voice. A date such as 04/03/2019 will be read as “April 3rd 2019” by a US English voice and “4th of March 2019” by a British English voice. Writing out the month in words can avoid confusion.</p>
+              <li>どのような文化圏でも読んで理解できる日付。 <p>日付をどのように書くかを考えてください。もう一度言いますが、音声合成は音声の言語に関連した書式を使用します。04/03/2019のような日付は、米国英語の音声では「April 3rd 2019」、英国英語の音声では「4th of March 2019」と読まれます。月を単語で書き出すと、混乱を避けることができます。</p>
 						</li>
             </ol>
             <p><span class="avoid"> </span><strong>避ける：</strong></p>
             <ol>
-              <li>Dates and numbers that are not clear or read differently based on culture.</li>
+              <li>明確ではない、または文化によって読み方が異なる日付や数字。</li>
             </ol>
       </section></section>
 
       <section>
         <h3>Include Symbols and Letters Necessary to Decipher the Words (Pattern)</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need words to include accents, characters, and diacritics that are necessary to phonetically read the words. This is often needed for speech synthesis and phonetic readers in languages like Arabic and Hebrew.</p></blockquote>
+        <blockquote><p>単語を音読するために必要なアクセント、文字、および付加記号を含む単語が必要である。 This is often needed for speech synthesis and phonetic readers in languages like Arabic and Hebrew.</p></blockquote>
         <p>関連するユーザーストーリー： <a href="#clear-language-written-or-audio-user-story" aria-label="Clear Language User Story">Clear Language</a>.</p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
