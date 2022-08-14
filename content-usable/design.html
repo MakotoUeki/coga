@@ -1690,97 +1690,79 @@
       </section></section>
 
       <section>
-        <h3>Let Users Go Back (Pattern)</h3>
+        <h3>ユーザーが戻れるようにする（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need predictable back or undo features so that I know exactly where I was previously, before I made a mistake.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#undo-user-story" aria-label="Undo User Story">Undo</a>.</p>
+        <blockquote><p>ミスをする前に、その前はどこにいたのかを正確に知るために、予測可能な戻る機能または元に戻す機能が欲しい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#undo-user-story">3.4.2　取り消す（Undo）</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-        <p>Always let the user return to a previous point.</p>
+        <p>常にユーザーが前のポイントに戻れるようにする。</p>
         <p>
-          The standard back button is the best way to do this as it is familiar
-          to the user. Many users will try the back button first.
+          標準の［戻る］ボタンは、ユーザーにとって馴染み深いものなので、これを行うのに最も適した方法です。多くのユーザーは、まず［戻る］ボタンを試してみるでしょう。
         </p>
-        <p>The user should never lose their work if they press back.</p>
+        <p>ユーザーが［戻る］を押しても、決して作業中の内容を消去してはいけません。</p>
           </section><section><h5 class="coga-5">メリット</h5>
           <p>
-            Allowing users to return to a previous point helps prevent mistakes and makes it easy to
-            correct mistakes when they happen.
+            ユーザーが前のポイントに戻れるようにすることによって、ミスを防ぎ、ミスが発生したときにも簡単に修正できます。
           </p>
-          <p>Examples of mistakes include:</p>
+          <p>ミスの例としては、以下のようなものがあります：</p>
           <ul>
-            <li>touching a control by accident,</li>
-            <li>opening a new link by accident, and</li>
-            <li>closing a window the user intended to keep open.</li>
+            <li>誤ってコントロールに触れてしまう。</li>
+            <li>誤って新しいリンクを開いてしまう。</li>
+            <li>開いたままにしておこうと思ったウィンドウを閉じてしまう。</li>
           </ul>
           <p>
-            If a person easily makes mistakes or makes them often, it is
-            important that they can go back and make changes without having
-            their work or previous choices deleted.
+           ミスをしやすい人、ミスが多い人は、自分の作業や以前の選択が削除されることなく、戻って変更できることが重要です。
           </p>
           <p>
-            For example, a user is watching a video. They try to increase the
-            volume but touch a different link instead. A new video now loads.
-            The user can press the back button and return to the video they were
-            watching before. They now know they can try and increase the volume
-            and if they make a mistake, they can easily go back and try again.
+            例えば、あるユーザーがビデオを見ているとします。音量を上げようとしたところ、別のリンクに触れてしまいました。すると、新しいビデオが読み込まれました。ユーザーは、［戻る］ボタンを押して、以前見ていたビデオに戻ることができました。ユーザーは、音量を上げようとしたときに、もしミスをしても、簡単に戻ってやり直せることが分かりました。
           </p>
-          <p> In another example, the back button did not work as expected, but took them somewhere else (such as the home page). When they try to change the volume or add a comment they often lose the video they were watching and cannot find the way to get back to it. The user now feels they cannot use any of the web site’s features in case they lose their main content again. They do not expand the screen, change the volume, or leave comments. </p>
+          <p>別の例では、［戻る］ボタンが期待通りに動作せず、どこか別の場所（HOMEページなど）に移動してしまったとします。音量を変えたり、コメントを入れたりしようとすると、見ていた動画が消えてしまい、元に戻す方法が分からなくなることがよくあります。ユーザーは、再びメインコンテンツが消えてしまったらと思うと、ウェブサイトのどの機能も使えないと感じるようになった。そうなると、画面を拡大したり、音量を変えたり、コメントを残したりしなくなります。</p>
           <p>
-            In forms, each time the user has to re-enter data presents a new chance for mistakes to occur. Entering and re-entering data can be stressful and tiring for some people with <a>cognitive and learning disabilities</a>. This increases the likelihood of mistakes and may make it impossible to submit correct data and complete the intended task.
+            フォームの場合、ユーザーがデータを再入力しなければならない時は、毎回新たなミスが発生する可能性があります。認知障害や学習障害がある人にとって、データの入力や再入力はストレスや疲れを感じる場合があります。そのため、ミスが発生する可能性が高くなり、正しいデータを送信して目的のタスクを完了することが不可能になるかもしれません。
           </p>
           <p>
-            For those with anxiety, memory challenges, and difficulty following
-            directions, the ability to go back and review information they have
-            entered is very important. For example, for some people the task of
-            following directions and reviewing their answers works best as two
-            separate tasks. Being able to enter information with their focus
-            being on following the directions, and later going back to review
-            their answers, helps them be more effective.
+            不安や記憶困難、指示に従うことに困難がある人にとって、入力した情報をさかのぼって確認できる機能は非常に重要です。例えば、指示に従うことと、自分の答えを確認することを、別々の作業として行うのが最適な人もいます。指示に従うことに集中して入力することが出来て、後で答えを確認するために振り返ることができれば、より効果的です。
           </p></section>
           <section>
-            <h5>Getting Started</h5>
-            <p>When the user has an opportunity to go back and review the data they entered, even if submitted by mistake. The back button always works as expected.</p>
+            <h5>まずはじめに</h5>
+            <p>間違って送信した場合でも、ユーザーが入力したデータを戻って確認する機会を提供する。［戻る］ボタンは、常に期待通りに機能する。</p>
           </section>
 
           <section><h5 class="coga-5">詳細</h5>
-          <p>Options for supporting users going back include:</p>
+          <p>ユーザーが戻ることをサポートするオプションには、次のようなものがあります：</p>
 		  <ul>
             <li>
-              Going back steps in a user journey via a clearly labeled
-              action.
+              明確にラベル付けされたアクションによって、ユーザージャーニー内の前のステップに戻る。
             </li>
             <li>
-              Using clickable breadcrumbs with clickable previous steps
-              and no loss of data.
+              クリック可能なパンくずリストを使用し、前のステップをクリックしてもデータが失われないようにする。
             </li>
             <li>
-              Using back and undo features without unwanted data loss.
+              データを失うことがない［戻る］や［元に戻す］機能を用いる。
             </li>
             <li>
-              Once it is mature you can also use personalization semantics to log the steps and return to
-              a step in the process.  See [[personalization-semantics-1.0]].
+              将来的には、パーソナライゼーション・セマンティクスを使用して、ステップのログを残して、プロセス内にあるステップに戻ることも可能になる。 [[personalization-semantics-1.0]] を参照のこと。
             </li>
-            <li>Reopening a closed window or option.</li>
+            <li>閉じたウィンドウやオプションを再び開く。</li>
           </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
           <p><span class="use"></span><strong>用いる：</strong></p>
-            <ol><li>Designs that make it easy to go back. For example:
+            <ol><li>前に戻りやすくするデザイン。例えば：
             <ul>
-            <li>The user is watching a video. They touch a control accidentally. Pressing back can take them back to the video at the same position.</li>
-            <li>A user is completing an online form when applying for a job. The user accidentally hits the home icon and navigates away from the form. The back button takes them back to where they were without any loss of data.</li>
-            <li>The user is also able to go back through all the screens to be sure they did not misunderstand a section or skip an answer. The user can edit any data they mistyped.</li>
+            <li>ユーザーが動画を見ている。誤ってコントロール（ボタン類）に触れてしまった。［戻る］を押すと、さっきまで見ていた再生位置に戻ることができる。</li>
+            <li>あるユーザーが、求人に応募するためにオンラインフォームに入力している。誤って［HOME］アイコンを押してしまい、フォームから離れた場所に移動してしまった。このとき、［戻る ］ボタンを押すと、データを失うことなく元の位置に戻ることができる。</li>
+            <li>ユーザーは、誤解しているセクションがないか、回答し忘れていないかを確認するために、すべての画面に戻ることもできる。また、入力ミスをしたデータを編集することも可能である。</li>
             </ul></li>
           </ol>
             <p><span class="avoid"></span><strong>避ける：</strong></p>
             <ol>
 
 
-            <li>Designs that make it hard to go back. For example:
+            <li>前に戻りづらいデザイン。例えば：
             <ul>
-             <li>The user is watching a video. They touch a control accidentally and go to a new video. Pressing back makes the new video smaller and does not take them back to the original video.</li>
-            <li>Completing an online form when applying for a job. The user goes back to a screen to check if they have forgotten to answer a question. When they use the back button all data previously entered has been cleared/deleted.</li>
-
+             <li>ユーザーが動画を見ている。誤ってコントロールに触れてしまい、新しいビデオに移動してしまった。［戻る］を押すと、新しい動画が小さくなるが、元の動画には戻してくれない。</li>
+            <li>就職活動中にオンラインフォームに入力する。ユーザーは、質問に答え忘れていないか確認するため、前の画面に戻る。このとき、［戻る］ボタンを押すと、以前に入力したデータはすべて消去されてしまう。</li>
             </ul></li>
           </ol>
       </section></section>
