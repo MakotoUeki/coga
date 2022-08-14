@@ -1645,46 +1645,46 @@
 
       <section>
         <h3>
-          Ensure Controls and Content Do Not Move Unexpectedly (Pattern)
+          コントロールとコンテンツが不意に動かないようにする（パターン）
         </h3>
           <section><h5 class="coga-5">ユーザーニーズ</h5>
-          <blockquote><p>I need to know where things are. Controls and content do not move unexpectedly as I am using them.</p></blockquote>
-          <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story" aria-label="Assistance and Support User Story">Assistance and Support</a>.</p>
+          <blockquote><p>どこに何があるかを知りたい。コントロールとコンテンツは、私が使用しているときには予期せずに移動しない。</p></blockquote>
+          <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story">3.1.2 明確な操作</a></p>
           </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-          <p>Make sure controls and content remain in place and do not move, unless the user initiates the movement. </p>
-          <p>A user may initiate a movement by triggering an action or by altering a property of the device, such as window size.</p>
-          <p>This can usually be achieved by:</p>
+          <p>ユーザーがを始動しない限り、コントロールとコンテンツは所定の位置に留まり、動かないようにします。 </p>
+          <p>ユーザーがアクションを起こしたり、ウィンドウサイズなどのデバイスのプロパティを変更したりすることによって、動き始めることがあります。.</p>
+          <p>これは通常、以下の方法で実現できます：</p>
             <ul>
-                <li>ensuring controls and content do not move about as the page loads or refreshes,</li>
-                <li>displaying a clear “loading” indicator if content moves or changes during a page load,</li>
-                <li>not updating or moving content, such as an item’s position in a list, unless the user causes it.</li>
+                <li>ページの読み込みや更新の際に、コントロールやコンテンツが動かないようにする。</li>
+                <li>ページの読み込み中にコンテンツが動いたり変更されたりした場合は、「読み込み中」のインジケータを明確に表示する。</li>
+                <li>ユーザーが操作しない限り、リスト内のアイテムの位置など、コンテンツを更新したり動かしたりしない。</li>
             </ul>
 
           </section><section><h5 class="coga-5">メリット</h5>
-          <p>If a control moves, users with slow hand-eye coordination or impaired cognitive processing speed may hit the wrong control. This causes unwanted actions and errors. The user may experience disorientation, confusion or even incorrect understanding of the content.</p>
-          <p>For example, a user moves to press a button on a video. The user accidentally nudges the device. The orientation changes to landscape and the control moves. Because the user has slow eye tracking or hand-eye coordination, they end up pressing a link to a new video.</p>
-          <p>Shifting controls and content can also cause cognitive overload and increase mental fatigue. For example, as a user with Traumatic <a>Brain Injury</a> reads content, the content refreshes and an additional article appears above the current content. The article the user is reading moves down. The user becomes disoriented and the application becomes very hard to use or understand.</p>
+          <p>コントロールが動くと、手と目の協調が遅いユーザーや認知処理速度が低下しているユーザーは、間違ったコントロールを押す可能性があります。 これにより、不要なアクションやエラーが発生します。 ユーザーは、方向感覚の喪失、混乱、さらにはコンテンツの誤った理解を経験する可能性があります。</p>
+          <p>例えば、あるユーザーが動画のボタンを押そうと動いたとします。その際、誤ってデバイスをなでたとします。すると、画面が横向き（ランドスケープ）になって、コントロールが動いてしまう。ユーザーはアイトラッキングや手と目の連動が遅いため、新しいビデオへのリンクを押してしまう。</p>
+          <p>また、コントロールやコンテンツを移動することによって、認知的な過負荷を引き起こし、精神的な疲労を増加させる可能性もあります。例えば、外傷性の<a>脳損傷</a>があるユーザーがコンテンツを読んでいると、コンテンツが更新され、現在のコンテンツの上に追加の記事が表示されます。このとき、ユーザーが読んでいる記事は下に移動します。このような場合、ユーザーは混乱し、アプリケーションは非常に使いづらく、理解しづらくなります。</p>
           </section><section><h5 class="coga-5">詳細</h5>
-		      <p>Controls moving unexpectedly includes:</p>
-				<ul><li>links in a list shifting positions,</li>
-					<li>orientation changes, and</li>
-					<li>slow loading of a page that the user thinks is complete.</li>
+		      <p>予期せず動くコントロールには、次のようなものがあります：</p>
+				<ul><li>位置を変えるリスト内のリンク</li>
+					<li>画面の向きの変化</li>
+					<li>ユーザーが完了したと思っている、ページの遅い読み込み</li>
 				</ul>
 
 
           </section><section><h5 class="coga-5">事例</h5>
           <p><span class="use"></span><strong>用いる：</strong></p>
             <ol>
-              <li>Controls and content that do not move about as the page loads or refreshes.</li>
-              <li>A loading icon, that is clearly visible while the page is loading. After the content is finished loading and there is no further movement, the icon is removed.</li>
-              <li>Controls and content that only move when the user initiates a change.</li>
+              <li>ページが読み込まれたり更新されたりしても、移動しないコントロールやコンテンツ。</li>
+              <li>ページが読み込まれている間はっきりと見える、読み込み中であることを示すアイコン。コンテンツの読み込みが終了し、それ以上動きがない場合は、アイコンを削除する。</li>
+              <li>ユーザーが変更を開始したときにのみ、動くコントロールとコンテンツ。</li>
             </ol>
             <p><span class="avoid"></span><strong>避ける：</strong></p>
             <ol>
-              <li>Controls and content that move without the user’s request. For example: The user is about to select a phone number to call. As the user is about to touch the phone number, it shifts down. The user presses the wrong phone number and calls the wrong person.</li>
-              <li>Links in a list shifting positions.</li>
-              <li>Orientation changes that cannot be easily turned off.</li>
-              <li>Slow loading pages that the user thinks are complete.</li>
+              <li>ユーザーの要求がなくても動くコントロールやコンテンツ。例えば、ユーザーが電話をかける電話番号を選ぼうとしているとする。ユーザーが電話番号に触れようとすると、電話番号が下にずれる。ユーザーは間違った電話番号を押してしまい、間違った相手に電話をかけてしまう。</li>
+              <li>位置が変わるリスト内のリンク</li>
+              <li>簡単に無効にできない、画面の向きの変更。</li>
+              <li>ユーザーが完了したと思っている、ページの遅い読み込み。</li>
             </ol>
 
       </section></section>
@@ -3558,7 +3558,7 @@
       <section>
         <h3>Let Users Control When the Content Moves or Changes (Pattern)</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to know where things are. Controls and content do not move unexpectedly as I am using them.</p></blockquote>
+        <blockquote><p>どこに何があるかを知りたい。コントロールとコンテンツは、私が使用しているときには予期せずに移動しない。</p></blockquote>
         <p>関連するユーザーストーリー： <a href="#adapt-user-story" aria-label="Adapt User Story">Adapt</a>.</p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
          <p>
