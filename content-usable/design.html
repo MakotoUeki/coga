@@ -2110,62 +2110,61 @@
       </section></section>
 
       <section>
-        <h3>Avoid Data Loss and “Timeouts” (Pattern)</h3>
+        <h3>データ消失と「タイムアウト」を回避する（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need time to complete my work. I do not want a session to timeout while I try to find the information needed, such as my postal/zip code or social security number.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story" aria-label="Assistance and Support User Story">Assistance and Support</a>.</p>
+        <blockquote><p>自分の作業を完了するための時間が必要。郵便番号や社会保障番号など、必要な情報を探すためにセッションがタイムアウトするのは避けたい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story">3.4.1 アシストとサポート</a></p>
         </section><section><h5 class="coga-5">やるべきこと</h5>
         <p>
-          Avoid timeouts and let the user save their  work as they go.
+          タイムアウトを避け、ユーザーが作業中に作業内容を保存できるようにする。
         </p>
-        <p>When this is not possible, inform the user when they initiate the process:</p>
+        <p>これが不可能な場合は、ユーザーがプロセスを開始するときに知らせる：</p>
           <ul>
-          <li>the amount of time available to complete the process,</li>
-          <li>if the user will lose entered data if a timeout occurs.</li>
+          <li>プロセスを完了するために利用可能な時間。</li>
+          <li>タイムアウトが発生した場合、入力したデータが失われる可能性があること。</li>
           </ul>
           </section>
           <section><h5 class="coga-5">メリット</h5>
           <p>
-            Timed events can present significant barriers for users with <a>cognitive and learning disabilities</a>. These users may require more time to read content or to perform functions, such as completing an online form. They may need to read help or look at notes.
+            時間制限のあるイベントは、<a>認知障害や学習障害</a>があるユーザーにとって大きな障壁となる可能性があります。これらのユーザーは、コンテンツを読んだり、オンラインフォームに入力するなどの機能を実行するために、より多くの時間を必要とする場合があります。ヘルプを読んだり、メモを見たりする必要があるかもしれません。
           </p>
           <p>
-            Users with <a>cognitive and learning disabilities</a> may need additional time to look up the information required to complete a transaction. They may need a break, without losing their place in the process, and without losing data that has already been entered.
+            認知障害や学習障害のあるユーザーは、取引を完了するために必要な情報を調べるために、さらに時間が必要な場合があります。また、プロセスの中で自分の現在位置を見失わずに、すでに入力されたデータを失うこともなく、休憩する必要がある場合もあります。
           </p>
           <p>
-            For example, while making a purchase on an e-commerce web site, a user does not remember required information. This may be a date, a phone number, or a zip code that may seem easy to remember for users without a cognitive or learning disability. They need to look up this information, which takes them time away from the screen. Then they need to copy it carefully into the form.
+            例えば、eコマースサイトで買い物をするとき、ユーザーは必要な情報を覚えていないことがあります。日付、電話番号、郵便番号など、認知障害や学習障害がないユーザーにとっては覚えやすいものかもしれません。このような場合、ユーザーは情報を調べる必要があり、画面から離れている時間がかかります。そして、その情報を慎重にフォームにコピーする必要があります。
           </p>
 
           <p>
-            In another example, a user is completing an online process for reserving a hotel room and purchasing a plane ticket. They become overwhelmed with the amount of instruction and data input required to complete the process. The user cannot complete the process in one sitting, and takes a break.
+            また別の例では、ユーザーが、ホテルの予約や航空券の購入などのために、オンライン手続き完了させようとしているとします。この場合、ユーザーは説明文およびプロセスを完了するために必要なデータ入力の量に圧倒されます。一度に完了することができないため、一旦休憩を取ります。
           </p>
 
-          <p> Users’ cognitive skills may diminish as they get tired. They then must stop the task for that day. When users know that their data won’t be lost, they can recover from mental fatigue and return to successfully complete the task. </p>
-		      <p>It is important to note that many people need time to read the “timeout” notice. Often, the session ends before the user has finished reading about how to extend the time. If the user is looking up information, they will not see the timeout notice. </p>
+          <p>疲れてくると、ユーザーの認知能力は低下します。すると、その日のタスクを中断しなければならなくなります。データが消えないと分かれば、精神的な疲労も回復させてから、タスクを成功させるために戻ってくることができます。</p>
+		      <p>ここで重要なのは、多くの人が「タイムアウト」の通知を読むのに時間がかかるということです。ユーザーが時間延長の方法を読み終える前に、セッションが終了してしまうことがよくあります。ユーザーが情報を調べている場合は、タイムアウトの通知に目を向けないでしょう。</p>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <p>
-            When a web site must timeout because sensitive information (such as credit card information) is entered or displayed, the web site should ask for the sensitive information at the last stage.
+            機密情報（クレジットカード情報など）を入力または表示させるため、Web サイトがタイムアウトしなければならない場合、Web サイトは最後の段階で機密情報の入力を要求する必要があります。
           </p>
           <p>
-            The web site should also warn the user that once they give the credit card information they should complete the process quickly as the session can timeout.
+            また、クレジットカード情報を入力したら、セッションがタイムアウトする可能性があるため、速やかに処理を完了するよう、Webサイトはユーザーに警告する必要があります。
           </p>
 
           </section><section><h5 class="coga-5">事例</h5>
           <p><span class="use"></span><strong>用いる：</strong></p>
               <ol>
-                <li>Unlimited time, when possible.</li>
-                <li>Timeouts that users with learning and cognitive disabilities find it easy to avoid. For example: At the start of the task the user is told that they have a day to complete the task. They have an option to set it to longer. </li>
-                <li>When the timeout is needed:
+                <li>可能な限り、時間無制限。</li>
+                <li>学習障害や認知障害があるユーザーが回避しやすいタイムアウト。例えば、タスクの開始時に、ユーザーはタスクを完了するまでに丸1日あることを知らされます。これより長い時間に設定するオプションもあります。</li>
+                <li>タイムアウトが必要な場合：
                 <ol>
-                <li><strong>Timeout warnings at the start of the task.</strong> For example: In an auction, there is a time limit on the amount of time a user has to submit a bid. At the start of the task, the user is warned about the time limit, and how long they have until the time ends.</li>
-                 <li>
-									<strong>When possible and safe, the user’s work is not lost.</strong> For example: A web site with sensitive information uses a client-side time limit to help protect users who may step away from their computers. When the user logs in again all the work is still in place. The user is warned ahead of time how long they have for inactive sessions and is told that their data will not be lost.</li>
+                <li><strong>タスクの開始時に出すタイムアウトの警告。</strong> 例えば、オークションでは、ユーザーが入札を行うための時間制限がある。タスクの開始時に、制限時間と終了までの時間について警告を出す。</li>
+                 <li><strong>可能かつ安全な場合は、ユーザーの作業内容は失われない。</strong> 例えば、機密情報を扱うWebサイトでは、コンピュータから離れる可能性のあるユーザーを保護するために、クライアントサイドの時間制限を使用する。ユーザーが再びログインしたとき、すべての作業内容がそのまま残っている。ユーザーは、非アクティブセッションをどれだけの時間持っていられるかについて事前に警告され、データが失われないことを告げられる。</li>
               </ol></li></ol>
               <p><span class="avoid"></span><strong>避ける：</strong></p>
               <ol>
-                <li>System timeouts that are not necessary for security.</li>
-                <li>System timeouts without warning the user at the start of the process.</li>
-                <li>System timeouts where the user loses their work, without it being a security or privacy risk.</li>
+                <li>セキュリティ上必要のないシステムタイムアウト。</li>
+                <li>該当プロセスの開始時にユーザーに警告しないシステムタイムアウト。</li>
+                <li>セキュリティやプライバシーを脅かすことなく、ユーザーが作業内容を失うようなシステムタイムアウト。</li>
               </ol>
 
       </section></section>
