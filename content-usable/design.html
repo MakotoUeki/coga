@@ -2170,78 +2170,67 @@
       </section></section>
 
       <section>
-        <h3>Provide Feedback (Pattern)</h3>
+        <h3>フィードバックを提供する（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need rapid feedback or visual cues to indicate an event was successfully triggered. For example, I need to know when an email has been sent, otherwise it looks as if it has just disappeared.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story" aria-label="Assistance and Support User Story">Assistance and Support</a>.</p>  </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
+        <blockquote><p>イベントが正常にトリガーされたことを示す、迅速なフィードバックや視覚的な合図が欲しい。例えば、いつメールが送信されたかを知る必要がある。そうでなければ、まるでメールが消えてしまったかのように感じる。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story">3.4.1 アシストとサポート</a></p>  </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
-          For each step in a process let the user know of its status and if it
-          was successfully completed.
+          プロセス中の各ステップについて、そのステータスと正常に完了したかどうかをユーザーに知らせる。
         </p>
 
           </section><section><h5 class="coga-5">メリット</h5>
-          Making the result of each user action clear helps people with a
-          variety of <a>cognitive and learning disabilities</a>. This includes:
+          ユーザーの各アクションの結果を明確にすることは、さまざまな<a>認知障害や学習障害</a>がある人たちの助けとなります。これには以下が含まれます
           <ul>
             <li>
-              understand that their actions were processed (e.g., the click did
-              something),
+              自分のアクションが処理されたことを理解する（例：クリックして何かをした）。
             </li>
-            <li>prevent uncertainty or doubt regarding the outcome, and</li>
-            <li>remember what they just did.</li>
+            <li>結果に対する不安や疑念を防ぐ。</li>
+            <li>今何をしたかを覚えている。</li>
           </ul>
           <p>
-            For example, a user with <a>age-related forgetfulness</a>, may have difficulty remembering how the interface worked. So when they press the send button they may not feel confident that the form was submitted. Feedback, such as a thank you message, will tell them submission occurred and make them feel confident in the process.
+            例えば、加齢による物忘れがあるユーザーは、インターフェースがどのように動作したかを覚えているのが困難なことがあります。そのため、［送信］ボタンを押しても、フォームが送信されたことに自信が持てないかもしれません。そこで、「ありがとうございました」というメッセージなどのフィードバックがあれば、送信されたことが分かり、プロセスに自信を持てます。
           </p>
           <p>
-            During a multi-step task this feedback (user-action feedback) can also assist people with attention or short-term <a>cognitive and learning disabilities</a> to remember what they are doing. For example, a user with early dementia may get distracted and then forget exactly where they were in the task. This user-action feedback helps re-orient them. It also helps them avoid leaving a task by reminding them that they are in a process, and where in the process they currently are.
+            また、複数のステップがあるタスクの場合、このフィードバック（ユーザーアクションへのフィードバック）は、注意力の障害や短期的な認知障害や学習障害がある人が、自分が何をしているのかを思い出すのに役立ちます。例えば、初期段階の認知症のユーザーは、気が散ってしまい、自分がタスクのどこにいたのかを忘れてしまうことがあります。このような場合、ユーザーアクションへのフィードバックにより、状況を再確認することができます。また、自分がプロセスの中にいること、そして現在プロセスのどこにいるのかを思い出させることによって、タスクからの離脱を回避できます。
           </p>
           <p>
-            Provide easily-recognizable success or failure feedback with every
-            user action. When possible, the feedback should use consistent and
-            familiar design patterns. For example:
+            ユーザーアクションの1つひとつに対して、容易に認識できる成功または失敗のフィードバックを提供する。可能であれば、フィードバックには一貫性のある慣れ親しんだデザインパターンを使用する。例えば：
           </p>
           <ul>
-            <li> After a step in a multi-step task is completed, breadcrumbs display a tick, or a checkmark next to that step’s name; and, if applicable, the title or the name of the next step is readily apparent. </li>
+            <li>複数のステップがあるタスク内で、あるステップが完了すると、パンくずリストはそのステップの名前の横にチェックマークを表示する。該当する場合は、次のステップのタイトルや名前がすぐに分かるようにする。</li>
             <li>
-              After a button is clicked, it should look depressed. (Note that if
-              it is a toggle button, the state should also be programmatically
-              determinable).
+              ボタンがクリックされた後、ボタンが凹んでいるように見える。(トグルボタンの場合は、その状態はプログラム的にも特定できること）。
             </li>
-            <li> After a form is submitted or an email message is sent, feedback communicating what just happened is provided, such as “Your application was submitted, thank you” or “Your email message was sent”. </li>
+            <li>フォームの送信やメールの送信後は、「応募が完了しました、ありがとうございました」、「メールが送信されました」など、今何が起こったかを伝えるフィードバックを提供する。</li>
           </ul>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <p>
-            The success or failure of every user initiated action is clearly
-            indicated to the user by visual, programmatically-determinable,
-            rapid feedback in the primary modalities of the content. Audio
-            feedback is supported.
+            ユーザが開始したすべてのアクションの成否は、コンテンツの主要モダリティにおいて、視覚的で、プログラム的に特定可能な、迅速なフィードバックによってユーザーに明確に示します。音声によるフィードバックもサポートされています。
           </p>
 
           </section><section><h5 class="coga-5">事例</h5>
          <p><span class="use"></span><strong>用いる：</strong></p>
           <ol>
             <li>
-            Visual state feedback. Use CSS and WAI-ARIA [[wai-aria-1.2]] states such as aria-pressed and aria-selected, to gives a visual change that shows the change in state. For example: Buttons and tabs with a visually clear state when selected.
+            視覚的な状態（state）のフィードバック。CSS および WAI-ARIA [[wai-aria-1.2]] の aria-pressed属性や aria-selected属性のような状態を使用して、状態の変化を視覚的に表現する。例えば、選択されたときの状態が視覚的に明確なボタンやタブ。
+
             </li>
-             <li>Messages that let the user know if a task is completed. For example:
+             <li>タスクが完了したことをユーザーに知らせるメッセージ。例えば：
              <ul>
             <li>
-              Confirmation messages when an email message is
-              successfully sent, or a form is successfully submitted.
+              メール送信に成功したとき、またはフォーム送信に成功したときの確認メッセージ。
             </li>
             <li>
-              Visible and programmatically-determinable information to
-              show that a new password is set.
+              新しいパスワードが設定されたことを示す、可視的でプログラムにより決定可能な情報。
             </li></ul></li>
           </ol>
         <p><span class="avoid"></span><strong>避ける：</strong></p>
           <ol>
             <li>
-               State changes without visual feedback.</li>
+               視覚的なフィードバックがない状態の変化。</li>
                <li>
-               Task succeeds or fails without feedback.</li>
+               フィードバックがないタスクの成功または失敗。</li>
           </ol>
       </section></section>
 
