@@ -1805,220 +1805,162 @@
       </section></section>
 
       <section>
-        <h3>Design Forms to Prevent Mistakes (Pattern)</h3>
+        <h3>ミスを防ぐフォームを設計する（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need an interface that helps me avoid mistakes.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story" aria-label="Assistance and Support User Story">Assistance and Support</a>.</p>
+        <blockquote><p>失敗を回避できるインターフェイスにしてほしい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#assistance-and-support-user-story">3.4.1 アシストとサポート</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-        <p>Choose a form design that reduces the chance that the user will make a mistake. This includes:</p>
+        <p>ユーザーがミスをする可能性を減らすようなフォームデザインを選択する。これには以下が含まれます：</p>
           <ul>
-          <li>Requiring the user to enter as little information as possible.</li>
-          <li>Clearly indicating required fields.</li>
-          <li>In a text field, accepting as many formats as possible. For example, accepting different formats of phone numbers.</li>
-          <li>Dividing long numbers into chunks (supporting autocomplete across fields).</li>
-          <li>Using an interface where only valid input can be selected.</li>
-          <li>Using autocomplete and personalization of form controls.</li>
-          <li>Accepting voice prompts when supported by the operating system.</li>
-          <li>Automatically correcting input errors when possible and reliable.</li>
-          <li>Providing the user with known suggestions and corrections.</li>
+<li>できるだけ少ない情報を入力させる。</li>
+<li>必須項目を明確にする。</li>
+<li>テキストフィールドでは、できるだけ多くの形式を受け入れる。例えば、電話番号の場合、さまざまな形式を受け付ける。</li>
+<li>長い番号は分割して入力する（フィールドをまたがるオートコンプリートに対応する）。</li>
+<li>有効な入力だけが選択されるようなインターフェイスを使用する。</li>
+<li>オートコンプリートやフォームコントロールのパーソナライズを使用する。</li>
+<li>オペレーティングシステムでサポートされている場合は、音声プロンプトを受け入れる。</li>
+<li>可能かつ信頼できる場合には、入力エラーを自動的に修正する。</li>
+<li>ユーザーに既知の提案や修正方法を提供する。</li>
           </ul>
 
           </section><section><h5 class="coga-5">メリット</h5>
-            <p>After making many errors, people with <a>cognitive and learning disabilities</a> and users with <a>age-related forgetfulness</a> often abandon their tasks and believe they cannot complete them. Error messages may be confusing. Correcting errors is often difficult and frustrating for users and increases cognitive fatigue. Many users need to stop when they get successive errors.</p>
-            <p>For example, while registering for an online banking account a form requires the input of the user’s birthdate. The required input format is xx/xx/xxxx with a leading zero for single digits. If a single input field with no input correction is presented, a user with a cognitive disability may enter 1/3/1996 triggering an error notification. It may not be clear to the user that the required format is 01/03/1996 (even if the format is shown below the input field or in the error notification).</p>
-            <p>A well-designed form makes it easier to fill in the information and prevents the user from making mistakes by automatically correcting or suggesting the correct date format.</p>
-            <p>Minimizing user generated errors by automatically correcting them will also minimize error notifications. Error notifications may be tiring and distracting, taking focus away from tasks and task completion.</p>
+            <p>認知障害や学習障害、加齢による物忘れのあるユーザーは、何度もエラーを起こしているうちに、タスクを放棄してしまい、完了できないと思い込んでしまうことがよくあります。エラーメッセージが分かりにくいこともあります。エラーの訂正は、ユーザーにとっては困難でフラストレーションのたまるものであり、認知的疲労を増大させることが多い。多くのユーザーは、連続したエラーに遭遇すると、中断せざるをえません。</p>
+            <p>例えば、オンラインバンキングに登録する際、ユーザーの生年月日を入力するフォームがあります。必須の入力形式は "xx/xx/xxxx" で、一桁の場合は先頭にゼロを付けることを求めています。もし、入力修正のない単一の入力フィールドが表示された場合、認知障害のあるユーザーは "1/3/1996" と入力し、エラー通知を受ける可能性があります。（入力フィールドの下やエラー通知に入力形式が表示されていても）求められている入力形式が "01/03/1996" であることが、ユーザーにとって明確でない場合があります。
+</p>
+            <p>よく設計されたフォームは、情報の記入を容易にし、正しい日付形式を自動的に修正または提案することによって、ユーザーのミスを防止します。</p>
+            <p>自動修正によってユーザーが発生させるエラーを最小限に抑えることは、エラー通知を最小限に抑えることにもつながります。エラー通知は、疲れるし、気が散って、タスクやタスクの完了から集中力を奪ってしまうかもしれません。</p>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <ul>
-		  <li>Clearly mark required content.</li>
+		  <li>必須の内容を明確に示す。</li>
             <li>
-              Only correct errors if the correction is reliable. Otherwise, if
-              suggestions for corrections are known, give the suggestions to the
-              user.
+              修正内容が確実な場合のみ、エラーを修正する。そうでない場合は、修正候補がわかっているのであれば、その候補をユーザーに伝える。
               <ul>
-                <li> For example, “Did you mean the first of February (01/02) or the second of January (02/01)?” </li>
+                <li>例えば、「2月1日（01/02）と1月2日（02/01）のどちらでしょうか？」</li>
               </ul>
             </li>
             <li>
-              Calendars and dates.
+              カレンダーと日付
               <ul>
-                <li> Calendars should default to the first relevant day. Work calendars should default to the first working day of a user’s locale. </li>
+                <li>カレンダーは、関連する最初の日にデフォルト設定する必要があります。 勤務カレンダーは、ユーザーの国・地域における最初の営業日の曜日にデフォルト設定する必要があります。</li>
                 <li>
-                  Calendar-based booking systems must prevent the user from booking the
-                  return date before the departure date.
+                  カレンダーベースの予約システムは、ユーザーが出発日よりも前に帰国日を予約することを防がなければなりません。
                 </li>
               </ul>
             </li>
             <li>
-              Temperature.
+              気温
               <ul>
-                <li>Use the default temperature format of the user’s location.</li>
+                <li>ユーザーの所在地のデフォルトの温度フォーマットを使用する。</li>
               </ul>
             </li>
           </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
          <p><span class="use"></span><strong>用いる：</strong></p>
-          <p>Designs that make mistakes less likely. For example: </p>
+          <p>ミスを少なくするデザイン。例えば：</p>
           <ul>
             <li>
-              Correcting errors of the post code being written in the text field
-              with the city or state information.
+              市または州の情報とともにテキスト フィールドに書き込まれている郵便番号のエラーを修正する。
+
             </li>
             <li>
-             Preventing the user from selecting inappropriate dates and providing a simple
-              explanation if the user attempts to do so.
+             ユーザーが不適切な日付が選択しないようにして、選択しようとした場合は分かりやすく説明する。
             </li>
           </ul>
                 <p><span class="avoid"></span><strong>避ける：</strong></p>
 
-          <p>Designs that make mistakes more likely. For example: </p>
+          <p>ミスしやすいデザイン。例えば：</p>
           <ul>
             <li>
-              The booking form provides two calendars without clear labels and
-              instructions. The form allows the user to select dates without warning as to
-              whether they are possible e.g. flight out on June 1st - flight
-              return May 30th.
+              予約フォームに2つのカレンダーがあり、明確なラベルや説明がない。ユーザーは、6月1日出発、5月30日帰着など、可能かどうかわからない日付を選択できる。
             </li>
             <li>
-              The system allows the user to select inappropriate dates without warning. The calendar
-              merely grays out inappropriate dates which may not be noticed. No
-              warnings are provided.
+              システム上、ユーザーは警告なしに不適切な日付を選択することができる。カレンダーは、不適切な日付がグレーで表示されるだけなので、気づかない可能性がある。警告が表示されない。
             </li>
           </ul>
 
       </section></section>
 
       <section>
-        <h3>Make it Easy to Undo Form Errors (Pattern)</h3>
+        <h3>Mフォームのエラーを簡単に元に戻せるようにする （パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to check my work and go back without losing the work I have just done.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#undo-user-story" aria-label="Undo User Story">Undo</a>.</p>
+        <blockquote><p>自分の作業をチェックして、今やった作業を失うことなく前に戻りたい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#undo-user-story">3.4.2 取り消す（Undo）</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
-          Always allow the user to check their work and correct any mistakes.
-          Once the user has fixed their mistake it should be easy to get back to
-          the place they were at without redoing additional steps.
+          常にユーザーが自分の作業を確認し、ミスを修正できるようにする。ユーザーがミスを修正した後は、追加のステップをやり直すことなく、元の場所に簡単に戻ることができるようにする。
         </p>
         <p>
-          For financial transactions and important information, allow the user
-          to easily cancel the transactions. Provide clear information and
-          simple instructions for important information such as the amount of
-          time the user has to cancel a transaction.
+          金銭的な取引や重要な情報については、ユーザーが簡単に取引をキャンセルできるようにする。ユーザーが取引をキャンセルできる時間など、重要な情報については、明確な情報と簡潔な説明を提供すること。
         </p>
 
           </section><section><h5 class="coga-5">メリット</h5>
           <p>
-            People with <a>cognitive and learning disabilities</a> make many more
-            mistakes filling out forms than the general population. When
-            mistakes cannot be easily corrected they cannot complete the task.
+            <a>認知障害や学習障害</a>がある人は、フォームの入力時に他の人よりも多くのミスをします。ミスを簡単に修正できない場合、彼らはタスクを完了することができません。
           </p>
           <p>
-            The ability to undo errors helps people with <a>cognitive and learning disabilities</a> safely use forms
-            and reduces the consequences that result from a mistake.
+            ミスを元に戻す機能があれば、認知障害や学習障害がある人はフォームを安全に使用することができ、ミスから生じる影響を減らすことができます。
           </p>
           <p>
-            For example, a user with a memory impairment may not remember that
-            they have already added an item to their shopping cart and may add
-            the item a second time. They may confuse the dates when booking a
-            trip or make other mistakes.
+            例えば、記憶障害があるユーザーは、ショッピングカートに商品を追加したことを思い出せず、同じ商品を2回追加することがあります。また、旅行の予約の際に日付を間違えたり、その他のミスを犯すかもしれません。
           </p>
           <p>
-            It is essential that people with <a>cognitive and learning disabilities</a> have the
-            opportunity to check their work and fix their mistakes easily.
+            認知障害や学習障害がある人にとって、自分の仕事をチェックし、ミスを簡単に修正できる機会があることは不可欠なことです。
           </p>
           <p>
-            For people with <a>cognitive and learning disabilities</a>, mistakes being theoretically
-            reversible is not enough. Often the process of reversing a
-            transaction is too complex for them to manage without help. They may
-            not have access to that help meaning they have to live with all the
-            mistakes they have made. In
-            addition, if the process of correcting mistakes is too difficult,
-            users may stop, either losing the transaction or buying unwanted
-            items.
+            認知障害や学習障害がある人にとって、ミスが理論的に取り消せるだけでは十分ではありません。多くの場合、トランザクションを取り消すプロセスは複雑で、手助けなしでは対処できません。しかし、そのような手助けを受けることができない場合、自分が犯したすべての間違いを背負って生きていかなければならなくなります。さらに、ミスを修正するプロセスが難しすぎると、ユーザーは取引を中止したり、不要な商品を購入したりする可能性があります。
           </p>
           <p>
-            The effect of this happening multiple times is devastating. As a result,
-            many users with disabilities may stop using
-            the Internet for many tasks.
+            このようなことが何度も繰り返されると、その影響は計り知れない。その結果、障害のあるユーザーの多くは、多くの作業でインターネットを使わなくなる可能性があります。
           </p>
           <p>
-            Allowing the user to change the number of items in the shopping cart
-            at any time can significantly reduce mistakes.
+            ユーザーがいつでもショッピングカートの中の商品の数を変更できるようにすると、ミスを大幅に減らすことができます。
           </p>
           <p>
-            A summary of the order, including product quantities and other costs
-            before the final submission, gives the user the chance to identify
-            any errors and make changes to the order. In this example given, a
-            summary of the purchase helps the user see the error in quantity as
-            well as a higher than expected order total.
+            最終的な送信の前に、商品の数量やその他の費用を含む注文の要約を表示することで、ユーザーはミスを発見して、注文を変更する機会を得ることができます。この例では、購入内容の要約によって、ユーザーは数量にミスがあったことと、合計金額が予想以上に高かったことを確認することができます。
           </p>
           <p>
-            In some cases, a user may realize that a mistake has been made after
-            the final submission of data. Provide simple language instructions on how to
-            cancel transactions and help the user understand the amount of
-            time needed to cancel a transaction. This makes them less
-            susceptible to scams.
+            場合によっては、ユーザーは最終的にデータを送信した後にミスに気づくこともあります。取引をキャンセルする方法を簡単な言葉で説明し、ユーザーが取引をキャンセルするために必要とされる時間を理解できるようにします。そうすることによって、詐欺に遭いにくくなります。
           </p>
           <p>
-            For example, a user with Attention-Deficit/Hyperactivity
-            Disorder purchasing a travel ticket on a web site may struggle with
-            details and may have an impaired attention span. The successful completion
-            of the order relies on the information provided at multiple steps in
-            the process. An error
-            such as an incorrect street number or zip code in the billing
-            address will result in the order not going though. If a summary is
-            not provided before submitting the final order, the
-            user may not understand the reason for the declined payment and give
-            up on the order. The user may also stop if there is not a clear and achievable
-            way to make a correction.
+            例えば、注意欠陥・多動性障害を持つユーザーがWebサイトで旅行券を購入する場合、詳細を理解するのに苦労し、注意力が低下している可能性があります。注文が正常に完了するかどうかは、プロセス中の複数のステップで提供される情報に依存しています。請求先住所の番地や郵便番号にミスがあると、注文は成立しません。最終的な注文を送信する前に要約が提供されない場合、ユーザーは支払いが拒否された理由を理解できず、注文をあきらめる可能性があります。また、訂正できる方法が不明確な場合、ユーザーは注文をやめてしまう可能性があります。
           </p>
 
           </section><section><h5 class="coga-5">詳細</h5>
-          <p>This typically includes:</p>
+          <p>これは通常、以下を含みます：</p>
           <ul>
             <li>
-              Change: It is simple for the user to review all the data and
-              correct mistakes, including mistakes that might not be
-              automatically identified. The user can change information via
-              clearly labeled actions and get back to the place they were at, in
-              one clearly labeled action without unwanted loss of data. (Some
-              data may need to be entered if it is dependent on the item that
-              was changed.)
+              変更：　ユーザーは、すべてのデータを簡単に確認して、自動的に識別されない可能性のある間違いを含め、ミスを修正できるのはシンプルなことです。ユーザーは、明確にラベル付けされたアクションによって情報を変更し、データを不要に失うことなく、1つの明確にラベル付けされたアクションで、元の場所に戻ることができます。（変更した内容に関係がある場合は、一部のデータを入力する必要があるかもしれません）。
             </li>
             <li>
-              Confirmed: A summary is provided before submitting important
-              information and the user is told when they are about to submit the
-              final information.
+              確認済み：　重要な情報を送信する前に要約を説明し、最終的な情報を送信しようとするときにユーザーに伝える。
             </li>
             <li>
-              Time frames and instruction for canceling transactions are clear
-              and easy to follow.
+              取引中止の期間や指示も明確で分かりやすい。
             </li>
           </ul>
 
           </section><section><h5 class="coga-5">まずはじめに</h5>
           <p>
-            Start with forms where a mistake can have serious consequences such
-            as financial loss or vulnerability.
+            ミスが経済的損失や脆弱性など重大な結果をもたらす可能性があるフォームから始める。
           </p>
 
           </section><section><h5 class="coga-5">事例</h5>
        <p><span class="use"></span><strong>用いる：</strong></p>
           <ul>
             <li>
-              A summary provided before submitting important information. It allows the user to correct information and return to the summary with a single click.
+              重要な情報を送信する前に提供される要約。ユーザーは、情報を修正し、ワンクリックで要約に戻ることができます。
             </li>
             <li>
-              Clickable breadcrumbs that allow the user to see the previous steps, go back, and change them.
+              ユーザーが前のステップを見たり、戻ったり、変更したりすることができるクリック可能なパンくずリスト。
             </li>
           </ul>
                  <p><span class="avoid"></span><strong>避ける：</strong></p>
 
           <ul>
             <li>
-              A summary provided before submitting important information, but the user cannot make corrections without losing other data entered.
+              重要な情報を送信する前に要約が提供されるが、ユーザーが訂正すると、入力した他のデータが失われてしまう。
             </li>
           </ul>
       </section></section>
