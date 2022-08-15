@@ -2866,49 +2866,50 @@
       <p>スマートシティなど、ユーザーデータに依存するアプリケーションもあります。システムを利用できないユーザーからのデータは、データ駆動型システムから欠落する可能性があります。彼らが問題点についてフィードバックすることもできない場合、問題はさらに深刻です。彼らの存在が目に見えなくなり、そのニーズは満たされないからです。</p>
 
       <section>
-        <h3>Provide Human Help (Pattern)</h3>
+        <h3>人間によるヘルプを提供する （パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to know how to get human help and can manage the process easily.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#help-user-story" aria-label="Help User Story">Help</a>.</p>
+        <blockquote><p>人間によるヘルプを得る方法を知って、簡単にプロセスを管理したい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#help-user-story">3.7.1 ヘルプ</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-        <p>Many people rely on human help. When possible, there is human help available, and it is easy to use. This includes:</p>
+        <p>多くの人が、人間によるヘルプを頼りにしている。可能な限り、人間によるヘルプがあり、容易に利用できるようにする。例えば：</p>
             <ul>
-            <li>Easy to find on each page and at each step of a process.</li>
-            <li>Easy to use via the mechanism the user prefers.</li>
-            <li>Requires as few steps as possible, such as:
+            <li>各ページ、プロセス中の各ステップで見つけやすい。</li>
+            <li>ユーザーが好むメカニズムで使いやすい。</li>
+            <li>できるだけ少ないステップで済む。例えば：
             <ul>
-            <li>a form with two fields,</li>
-            <li>an email address, or</li>
-            <li>a phone number that goes directly to a human.</li>
+            <li>2つのフィールドがあるフォーム</li>
+            <li>電子メールアドレス、または</li>
+            <li>直接担当者につながる電話番号</li>
             </ul>
             </li>
             </ul>
 
-            <p>Access to human help should never require the user to manage complex menu systems such as a voice menu with many different options.</p>
+            <p>人間によるヘルプを利用するにあたって、多くの様々なオプションがある音声メニューのように、複雑なメニューシステムを操ることをユーザーに要求してはならない。</p>
 
-            <p>Organizations mechanisms should be in place to ensure support staff effectively help people with learning and cognitive disabilities and provide a good experience.</p>
+            <p>サポートスタッフが認知障害や学習障害がある人々を効果的にヘルプして、良いエクスペリエンスを提供できるように、組織の仕組みを整備する。</p>
 
           </section><section><h5 class="coga-5">メリット</h5>
-            <p>When a user gets stuck or confused for any reason, getting help from a human is usually the most effective solution. In reality many sites provide this option only to users who can navigate complex systems.</p>
-            <p>Examples of complex system include a process where a user needs to follow many links to get to the human contact information. It could also be a phone number requiring the user to answer many questions before connecting with a person. With a complex system, the people who need it most will not have access to the human help option. They may the user may have cognitive overload and stop trying to complete the process. They may also leave with a negative attitude towards the service or supplier.</p>
-            <p>For example, a user with an intellectual disability wants to use a coupon. They cannot find the instructions for applying the coupon to their online purchase, and they cannot find the phone number for support. They effectively cannot use the coupon.</p>
+            <p>ユーザーが何らかの理由で行き詰まったり、混乱したりした場合、人間のヘルプを利用できることが、通常は最も効果的な解決策になります。しかし、実際には、多くのサイトで、複雑なシステムを操作できるユーザーに対してのみ、このオプションが提供されています。
+</p>
+            <p>複雑なシステムの例としては、人間の連絡先情報にたどり着くまでに、ユーザーが多くのリンクをたどる必要があるようなプロセスが挙げられます。また、担当者につながるまでに、ユーザーが多くの質問に答えることを要求する電話番号というのもあります。複雑なシステムでは、それを最も必要とする人々が、人間によるヘルプのオプションまでたどり着けないでしょう。このような場合、ユーザーは認知的過負荷に陥り、プロセスを完了するのをやめてしまうかもしれません。また、サービスやその提供者に対して否定的な態度で去ってしまうかもしれません。</p>
+            <p>例えば、知的障害があるユーザーが、クーポンを利用しようとしたとします。しかし、オンライン購入にクーポンを適用するための手順が見つからず、サポートのための電話番号も見つかりません。そのため、クーポンを利用することができません。</p>
 
           </section><section><h5 class="coga-5">事例</h5>
 
 <p><span class="use"></span><strong>用いる：</strong></p>
             <ol>
-            <li>A phone number, ideally with a feature to automatically call via an interoperable <a>Voice user interfaces</a> (VUIs) specification.</li>
-            <li>A number that goes directly to a human or an available standard to get human help for example, using the 0 digit on voice menu systems.</li>
-            <li>An email link using the “mailto” protocol [[mailto]] with prefilled “to” and “subject” fields. Note that this will not work on all platforms or mail clients.</li>
-            <li>An option for live chat or video call help. Note: It must be fully accessible and easy to close new windows that open as part of live help functionality. Ensure live chats do not distract users from their task.</li>
+            <li>電話番号。理想的には、相互運用可能な<a>音声ユーザーインターフェース</a>（VUI）の仕様を介して、自動的に発信する機能付き。</li>
+            <li>例えば、音声メニューシステムで数字「0」を使用して、人間によるヘルプを利用するために、人間または利用可能なスタンダードに直接行く番号。</li>
+            <li>mailtoプロトコル [[mailto]] を用いて、「to」と「subject」フィールドがあらかじめ記入された電子メールリンク。なお、これは全てのプラットフォームやメールクライアントで動作するわけではないことに注意してください。</li>
+            <li>ライブチャットやビデオ通話によるヘルプのオプション。なお、ライブヘルプ機能の一部として開く新しいウィンドウは、完全にアクセシブルであり、簡単に閉じることができる必要がある。ライブチャットは、ユーザーのタスクの邪魔にならないようにすること。</li>
             </ol>
                       <p><span class="avoid"></span><strong>避ける：</strong></p>
 
             <ol>
-            <li>Long contact forms the user must fully complete to get human help.</li>
-            <li>Multi-step menus to reach help.</li>
-            <li>Including the contact information on a single page that is only linked to from a few pages on the site.</li>
-            <li>Forcing users to go through multiple steps to get to human help.</li>
+            <li>人間によるヘルプを利用するために、ユーザーが全て入力しなければならない長い問い合わせフォーム。</li>
+            <li>ヘルプにたどり着くまでに複数のステップがあるメニュー。</li>
+            <li>サイト内の数ページからしかリンクされていないページに掲載された連絡先情報。</li>
+            <li>ヘルプにたどり着くまでに、ユーザーに複数のステップを踏ませること。</li>
             </ol>
       </section></section>
 
