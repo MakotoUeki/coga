@@ -2682,104 +2682,106 @@
     </section></section>
 
        <section>
-        <h3>Let Users Avoid Navigating Voice Menus (Pattern)</h3>
+        <h3>ユーザーが音声メニューを操作しなくて済むようにする（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p> I need to get human help, without going through a complex menu system.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#voice-menus-user-story" aria-label="Voice Menus User Story">Voice Menus</a>.</p>
+        <blockquote><p>複雑なメニューシステムを介さずに、人間のヘルプを利用したい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#voice-menus-user-story">3.6.3 音声メニュー</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-        <p>Let people easily reach a human who can help. Do not require navigating menu systems to reach a human. </p>
-		<p>Design helpful voice menus by:</p>
+        <p>ヘルプできる人に容易に連絡できるようにする。担当者にコンタクトするために、メニューシステムの使用を求めない。</p>
+		<p>音声メニューは以下のように設計する：</p>
             <ul>
-                <li>Providing a known word or reserved digit (such as “0” or “help”) that can be used at any time to skip the voice menu and go directly to a person.</li>
-                <li>Avoiding unnecessary steps or options.</li>
-                <li>Avoiding unnecessary or distracting information such as promotional information.</li>
-                <li>Using words normally used by people with a wide range of <a>cognitive and learning disabilities</a>.</li>
-                <li>Waiting for a slow speaker to respond.</li>
-                <li>Allowing for a quiet speaker, repetition, and stutters.</li>
-                <li>Supporting forgetfulness and <a>memory impairments</a>.</li>
-                <li>Allow for easy error recovery.</li>
-                <li>Following usability best practices.</li>
+                <li>音声メニューをスキップして直接人にコンタクトするために、いつでも使える既知の単語または予約番号（「0」または「ヘルプ」など）を提供する。</li>
+                <li>不必要なステップやオプションを避ける。</li>
+                <li>プロモーション情報など、不要な情報や注意をそらすような情報を避ける。</li>
+                <li>さまざまな<a>認知障害や学習障害</>がある人が普通に使う言葉を使う。</li>
+                <li>遅い話し手が反応するのを待つ。</li>
+                <li>静かな話し手、繰り返し、吃音を許容する。</li>
+                <li>物忘れや<a>記憶障害</a>をサポートする。</li>
+                <li>エラーの回復を容易にする</li>
+                <li>ユーザビリティのベストプラクティスに従うこと。</li>
             </ul>
 
           </section><section><h5 class="coga-5">メリット</h5>
-          <p> Many people cannot use voice menu systems. This often stops people from completing critical tasks by themselves. Often this can include making doctors’ appointments, getting health insurance, reaching social services, getting their water turned back on, etc. </p>
-          <p> If people cannot manage voice menus by themselves, they have to ask someone else to help them. This means the service is not accessible to them. Sometimes tasks are not done. For example, they may delay making a doctor’s appointment or other critical task as not to bother their helper. People often do not get the help they need or get it too late. (This may be partly responsible for the lower life expectancy of people with learning and cognitive disabilities.) </p>
+          <p>音声メニューが使えない人は多い。そのため、重要なタスクを自分で完了できないことがよくあります。例えば、医者の予約、健康保険の加入、ソーシャルサービスの利用、水道の復旧などです。</p>
+          <p>音声メニューを自分で操作できない場合、誰かに助けを求めなければなりません。これでは、サービスはアクセシブルではありません（利用できません）。タスクが完了しないこともあります。例えば、ヘルパーの手を煩わせないようにと、医師の予約やその他の重要な作業を遅らせてしまうことがあります。必要な支援が受けられない、あるいは手遅れになることが多いのです。(認知障害や学習障害がある人の平均寿命が短いのは、このことが一因かもしれません）。</p>
 
-          <p>Why can’t people use complex menus?</p>
+          <p>なぜ人は複雑なメニューを使えないのか？</p>
           <ul>
-            <li>A good short-term and working memory (several seconds) is essential so that the user can remember the number or the term for the menu. Without these functions the user is likely to select the wrong number.</li>
-            <li>Many users have an impaired working memory. For example, if you can remember 7 letters or items in your head at the same time they may be able to remember one or two. This makes them less likely to manage a menu system correctly.</li>
-            <li>For example, a phone menu system (voice markup system) may have an option: “Press 3 for internal services”. To use this option the user must remember a digit 3 while figuring out if they need an internal service. Many people cannot do this. It also requires them to press the correct digit.</li>
-            <li>When a lot of irrelevant information is given before the correct option, the user may have cognitive overload and stop. This is especially true if they did not understand all the earlier options and information.</li>
-            <li>They may not understand the terms used. Having focused on the menu, they may forget why they are calling.</li>
-            <li>Alternative routes, such as web menus, may be provided but are also complex. They are therefore not helpful.</li>
+            <li>ユーザーがメニューの番号や用語を覚えるためには、優れた短期記憶と作業記憶（数秒）が不可欠です。これらの記憶がなければ、ユーザーは間違った番号を選択する可能性が高くなります。</li>
+            <li>多くのユーザーはワーキングメモリーの機能が低下しています。例えば、あなたが7つの文字や項目を同時に頭の中で記憶できたとしても、人によっては1つか2つしか記憶できないかもしれません。そのため、メニューシステムを正しく管理することが難しくなります。</li>
+            <li>例えば、電話のメニューシステム（音声マークアップ・システム）には、「3を押して、社内サービスへ」というようなオプションがあります。数字が先に出てくると、社内サービスが必要かどうかを判断する前に、ユーザーは3という数字を覚えなければなりません。多くの人はこれを行うことができません。また、正しい数字を押すことも必要です。</li>
+            <li>正しい選択肢の前に多くの無関係な情報が与えられると、ユーザーは認知的過負荷に陥り、立ち止まってしまうかもしれません。特に、以前の選択肢や情報をすべて理解していなかった場合は、そうなります。</li>
+            <li>使用されている用語を理解していない可能性があります。メニューに集中した結果、なぜ電話をしているのか忘れてしまうこともあります。</li>
+            <li>ウェブメニューのような代替ルートが提供されることもあるが、それも複雑である。そのため、役に立ちません。</li>
           </ul>
-          <p> The 0 digit, the word “help” or other culturally appropriate term, should be reserved for reaching a person. Consistently set the first option for each menu to: “to wait for a person who can help you press 0”. This can help everyone reach the support they need. </p>
+          <p>0桁の数字、「ヘルプ」、またはその他の文化的に適切な用語は、人にコンタクトするときに使うとよいでしょう。各メニューの最初の選択肢を一貫して「サポートできる人を待つには、0を押してください」にしてください。これにより、誰もが必要なサポートにたどり着くことができます。</p>
 
-		      <p>Test any system with a wide range of users with different learning and cognitive disabilities. Involving a wide range of users has made many voice systems accessible to the extent that they become an aid people with <a>cognitive and learning disabilities</a>. </p>
+		      <p>Tあらゆるシステムを認知障害や学習障害がある様々なユーザーでテストしてください。様々なユーザーに参加してもらうことによって、多くの音声システムが、認知障害や学習障害のある人の助けとなる程度までには、アクセシブルになってきました。</a></p>
 
           </section><section><h5 class="coga-5">詳細</h5>
-          <p>Follow best practices in general <a>voice user interfaces</a> (VUIs) design. Standard best practices in <a>voice user interfaces</a> apply to users with cognitive disabilities, and should be followed. These practices are improving as more designs focus on <a>conversational interfaces</a>. Some examples of generally accepted best practices in <a>voice user interfaces</a> design:</p>
+          <p>一般的な<a>音声ユーザーインターフェース</a>（VUI）設計のベストプラクティスに従うこと。音声ユーザーインターフェースの標準的なベストプラクティスは、認知障害があるユーザーにも適用されるため、それに従う必要があります。<a>対話型インターフェース</a>に焦点を当てた設計が増えるにつれ、これらのプラクティスは改善されています。音声ユーザーインターフェースの設計で一般に受け入れられているベストプラクティスの例をいくつか挙げます：</p>
           <ul>
-            <li>Pauses are important between phrases in order to allow processing time of language and options.</li>
-            <li>Options in text should be given before the digit to select, or the instruction to select that option. This will mean that the user does not need to remember the digit or instruction whilst processing the term. For example: The prompt “press 1 for the secretary,” requires the user to remember the digit 1 while interpreting the term “secretary”. A better prompt is “for the secretary (pause): press 1” or “ for the secretary (pause) or for more help (pause): press 1”.</li>
-            <li>Error recovery should be simple, and take the user to a human operator if the error persists. Error responses should not end the call or send the user to a more complex menu.</li>
-            <li>Advertisements and other extraneous information should not be read as it can confuse the user and can make it harder to retain attention.</li>
-            <li>Terms used should be as simple and jargon-free as possible.</li>
-            <li>Use Tapered prompts. Best practices in <a>voice user interfaces</a> design include providing several different prompts for each point in the interaction. The different prompts are used based on the user’s behavior. For example, if the user takes a long time to respond to a prompt, a simpler or more explanatory version of the prompt can be used instead of the default. They should be used to increase the level of prompt detail when the user does not respond as expected.</li>
+            <li>言語とオプションの処理時間を確保するために、フレーズとフレーズの間に一呼吸を入れることが重要である。</li>
+            <li>選択肢の内容は、選択する数字や、その選択肢を選択する指示の前に提示する。そうすることで、ユーザーはその言葉を処理する際に、数字や指示を覚えておく必要がなくなる。例えば、プロンプト「1 を押して、秘書を呼ぶ」では、ユーザーは「秘書」という用語を解釈するまでの間、数字の「1」を覚えておく必要がある。より良いプロンプトは「秘書を呼ぶ（一時停止）：1を押してください」または「秘書を呼ぶ（一時停止）またはヘルプが必要なら（一時停止）：1を押してください」となる。</li>
+            <li>エラーの修正は容易に出来るべきであり、エラーが続く場合は、ユーザーを人間のオペレーターのところに案内すべきである。エラーへの対応は、通話を終了させたり、ユーザーをより複雑なメニューに案内したりしてはいけない。
+</li>
+            <li>広告やその他の余計な情報は、ユーザーを混乱させ、注意力を持続させることが難しくなるため、読まないようにする。</li>
+            <li>使用する用語は、できるだけシンプルかつ専門用語でないものにする</li>
+            <li>先細になるプロンプトを使用する。音声ユーザーインターフェースの設計におけるベストプラクティスとして、インタラクションの各ポイントに対して複数の様々なプロンプトを提供することが挙げられます。様々なプロンプトは、ユーザーの行動に基づいて使用されます。例えば、ユーザーがプロンプトに応答するのに長い時間がかかる場合、デフォルトのプロンプトの代わりに、よりシンプルなプロンプトやより説明的なプロンプトを使用することができます。これらは、ユーザーが期待通りに反応しない場合に、プロンプトの詳細レベルを上げるために使用する必要があります。</li>
           </ul>
-          <p><strong>User settings</strong></p>
-            <p>User-specific settings can be used to customize the <a>voice user interfaces</a> (such as menus, and options). Keep in mind that if it is difficult to set user preferences, they won’t be used. Setting preferences by natural language is the most natural (”slow down!”), but is not currently very common.</p>
+          <p><strong>ユーザーの設定</strong></p>
+            <p>ユーザー固有の設定を使用して、音声ユーザー インターフェイス (メニューやオプションなど) をカスタマイズできる。ユーザープリファレンスの設定が難しい場合、それらは使用されないことに注意する。自然言語によるプリファレンスの設定 (「速度を落としてください!」)が最も自然ですが、現在はあまり一般的ではない。</p>
             <ul>
-            <li>Extra time should be a user setting for both the speed of speech and ability for the user to define if they need a slower speech or more input time etc. Timed text should be adjustable (as with all accessible media).</li>
-            <li>The user should be able to extend or disable timeouts as a system default on their device.</li>
-            <li>Error recovery should be simple, and take you to a human operator. Error responses should not throw the user off the line or send them to a more complex menu. Preferably they should use a reserved digit for support and human help.</li>
-            <li>Advertisement and other information should not be read as it can confuse the user and can make it harder to retain attention.</li>
-            <li>Terms used should be as simple as possible.</li>
-            <li>Examples and advice should be given on how to build a prompt that reduces the cognitive load
+            <li>音声のスピード及びゆっくり話すか、入力時間を長くするかは、ユーザーが設定できるようにする必要がある。時間制限のあるテキストは、（すべてのアクセシブルなメディアと同様に）調整可能にすべきである。</li>
+            <li>タイムアウトは、ユーザーが自分のデバイスのシステムデフォルトとして延長または無効化できる必要がある。</li>
+            <li>エラーの修正はシンプルであり、また人間のオペレーターのところに案内すべきである。エラーの対応は、ユーザーを回線から切り離したり、より複雑なメニューに案内したりするものであってはならない。サポートと人間によるヘルプのために予約番号を使用することが好ましい。</li>
+            <li>広告やその他の情報は、ユーザーを混乱させ、注意力を持続させることが難しくなるため、読まないようにする。</li>
+            <li>使用する用語はできるだけシンプルにする。</li>
+            <li>認知的負荷を軽減するプロンプトの構築方法について、事例とアドバイスを提供すべきである。
+
             <ul>
-            <li>Example 1: Reducing cognitive load: The prompt “press 1 for the secretary,” requires the user to remember the digit 1 while interpreting the term secretary. It is less good then the prompt “for the secretary (pause): press 1” or “ for the secretary (pause) or for more help (pause): press 1”.</li>
-            <li>Example 2: Setting a default for a human operator as the number 0.</li>
+            <li>例1．認知的負荷を軽減する プロンプト「秘書を呼ぶには1を押す」では、ユーザーは秘書という用語を解釈するまでの間、数字の1を覚えておく必要がある。これは、プロンプト「秘書を呼ぶ（一時停止）：1を押してください」や「秘書を呼ぶ（一時停止）またはヘルプが必要なら（一時停止）：1を押してください」よりも劣る。</li>
+            <li>例2: デフォルトを人間のオペレーターにして、数字0を設定する。</li>
             </ul>
             </li>
             </ul>
 
-            <p><strong>Considerations for Speech Recognition</strong></p>
+            <p><strong>音声認識に関する考察</strong></p>
 
             <ul>
-            <li>For speech recognition based systems, standards for voice commands for many languages exists and should be used where possible, such as the ETSI standard <a href="https://www.etsi.org/deliver/etsi_es/202000_202099/202076/02.01.01_50/es_202076v020101m.pdf">ETSI 202 076</a>. Keep in mind that expecting people to learn more than a few commands places a cognitive burden on the user.</li>
-            <li>Natural language understanding systems allow users to state their requests in their own words. This can be useful for users who have difficulty remembering menu options, or who have difficulty mapping the offered menu options to their goals. However, natural language interfaces can be difficult to use for users who have difficulty producing speech or language. Directed dialog (menu-based) fallback or transfer to an agent should be provided. Such fallbacks should be easy to use and conform to this document.</li>
+            <li>音声認識をベースにしたシステムには、多くの言語に対応した音声コマンドの規格があり、ETSI規格の<a href="https://www.etsi.org/deliver/etsi_es/202000_202099/202076/02.01.01_50/es_202076v020101m.pdf">ETSI 202 076</a>など、可能な限り使用することよい。数個以上のコマンドを覚えさせるのは、ユーザーにとって認知的な負担となることを念頭に置くこと。</li>
+            <li>自然言語理解システムは、ユーザーが自分の言葉でリクエストを口述することを可能にする。これは、メニューオプションを覚えるのが困難なユーザーや、提示されたメニューオプションを自分の目的に対応させるのが困難なユーザーにとって有用である。しかし、自然言語インターフェースは、音声や言語を発することが困難なユーザーにとって使いにくい場合がある。そのため、直接対話（メニューベース）のフォールバックやエージェントへの転送を提供すべきである。このようなフォールバックは使いやすく、この文書に準拠している必要がある。</li>
             </ul>
-            <p>Follow requirements of legislation.</p>
-            <p>For example, the U.S. Telecommunications Act Section 255 Accessibility Guidelines [[Section255]] paragraph 1193.41 Input, control, and mechanical functions, clauses (g), (h), and (i) apply to cognitive disabilities and require that equipment should be operable without time-dependent controls, the ability to speak, and should be operable by persons with limited cognitive skills.</p>
-            <p>See <a href="https://w3c.github.io/coga/issue-papers/voice-menus.html">Voice Menu Systems</a> issue paper for a full discussion.</p>
+            <p>法規制の要件に従う。</p>
+            <p>例えば、米国電気通信法第255条アクセシビリティガイドライン [[Section255]] 1193.41項 入力、制御、機械的機能(g), (h) 及び (i)が認知障害に適用されます。時間に依存した制御、発話能力がなくても機器が操作できること、及び認知能力が限られている人が操作できること、が要求されています。</p>
+            <p>詳細については、 <a href="https://w3c.github.io/coga/issue-papers/voice-menus.html">Voice Menu Systems</a> の論点書を参照のこと。</p>
 
           </section><section><h5 class="coga-5">まずはじめに</h5>
           <p>
-           Ensure this pattern is included in important systems that affect health, finance, communication, water, and government services.
+           健康、金融、通信、水、行政サービスに影響を与える重要なシステムにおいて、このパターンを用いる。
           </p>
 
 
           </section><section><h5 class="coga-5">事例</h5>
   <p><span class="use"></span><strong>用いる：</strong></p>
             <ul>
-                <li>User interaction dialogs in which the first option takes you directly to a human. For example: “To reach for a person who can help you, press 0 or say help”.</li>
-                <li>Error recovery from each point, allowing the user to fix errors easily.</li>
-                <li>The user can easily go back or repeat the list at any point.</li>
-                <li>A user-interaction dialog, such as the standard “0” from any point, where there is easy access to a human operator who can help users achieve their goals.</li>
-                <li>Speech is clear, with pauses.</li>
-                <li>Common words are used.</li>
-                <li>State the option before giving them the key to press or term to use.</li>
-                <li>Advisory technique: Cueing users to record something that may be useful at a later point, and give them time to do so.</li>
+                <li>最初の選択肢で人間に直接コンタクトできるユーザー対話ダイアログ。例えば 「あなたを助けられる人にコンタクトするには、0を押す。または、「ヘルプ」と言ってください」。</li>
+                <li>ユーザーは簡単にエラーを修正できる、各ポイントからのエラー回復。</li>
+                <li>ユーザーはどの時点でも簡単にリストに戻ったり、繰り返したりすることができる。</li>
+                <li>任意のポイントから標準的な「0」のようなユーザーインタラクションダイアログがあり、ユーザーが目的を達成するのを助ける人間のオペレーターに簡単にアクセスできる。</li>
+                <li>音声は明瞭で、間がある。</li>
+                <li>一般的な単語が使用されている。</li>
+                <li>押すべきキーや使用する用語を提示する前に、選択肢を述べる。</li>
+                <li>推奨手法：後になってから役に立つかもしれない何かを記録するようユーザーに合図し、そのための時間を与えること。</li>
             </ul>
             <p><span class="avoid"></span><strong>避ける：</strong></p>
             <ul>
-              <li>Long menu systems that make it hard to find a person.</li>
-              <li>Unclear error recovery.</li>
-              <li>Complex language and uncommon terms.</li>
-              <li>Unnecessary content, such as promotions.</li>
-              <li>Fast speech, or expecting fast inputs from the user.</li>
-              <li>Systems that were not tested with a wide range of users with different <a>cognitive and learning disabilities</a>.</li>
+              <li>人を見つけるのが大変な長いメニューシステム。</li>
+              <li>不明確なエラー回復。</li>
+              <li>複雑な言葉や一般的でない用語。</li>
+              <li>宣伝などの不要なコンテンツ。</li>
+              <li>早口、またはユーザーからの早い入力を期待するもの。</li>
+              <li>さまざまな認知障害や学習障害を持つ幅広いユーザーでテストされていないシステム。</li>
             </ul>
       </section></section>
 
