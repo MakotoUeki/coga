@@ -2561,70 +2561,56 @@
          <p>ユーザーがコンテンツ、サービス、またはヘルプにアクセスできるようにするには、記憶に頼るプロセスを使用しないようにします。必要な人には、より簡単なオプションを提供してください。</p>
       <section>
         <h3>
-          Provide a Login that Does Not Rely on Memory or Other Cognitive Skills (Pattern)
+          記憶やその他の認知スキルに依存しないログイン方法を提供する（パターン）
         </h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need to be able to use a site without remembering or transcribing passwords and usernames.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#accessible-authentication-user-story" aria-label="Accessible Authentication User Story">Accessible Authentication</a>.</p>
+        <blockquote><p>パスワードやユーザー名を覚えたり書き写したりせずに、サイトを利用したい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#accessible-authentication-user-story">3.6.2 アクセシブルな認証</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-        <p>Users can login, register, and reset credentials, without having more cognitive abilities then they need to use a simple web page. They do not have to:</p>
+        <p>ユーザーは、シンプルなウェブページを利用するのに必要な認知能力があれば、ログイン、登録、認証情報のリセットを行うことができる。ユーザーは、以下のことをする必要はない：</p>
             <ul>
-            <li>memorize character strings,</li>
-            <li>perform calculations,</li>
-            <li>copy content,</li>
-            <li>answer puzzles,</li>
-            <li>reliably reproduce gestures, or</li>
-            <li>recognize characters presented on screen, and then enter them into an input field.</li>
+            <li>文字列を記憶する。</li>
+            <li>計算をする。</li>
+            <li>コンテンツをコピーする。</li>
+            <li>パズルに答える。</li>
+            <li>ジェスチャーを確実に再現する。</li>
+            <li>画面に表示された文字を認識し、入力フィールドに入力する。</li>
             </ul>
 
           </section><section><h5 class="coga-5">メリット</h5>
           <p>
-            People with <a>memory impairments</a> often forget their passwords and are not able to login. Their solutions often are only sometimes helpful and have security risks:
+            記憶障害がある人は、パスワードを忘れてしまい、ログインできないことがよくあります。その解決策は、役に立つときもありますが、セキュリティ上のリスクがあることも多いのです：
           </p>
           <ul>
-            <li>
-              They may have to look at or listen to text several times to copy
-              or type it into a form field.
-            </li>
-            <li>
-              They may reuse a single password or use a simple-to-remember
-              password, which they can remember.
-            </li>
-            <li>
-              If they need to change their password or use a complicated
-              password they may store passwords insecurely, such as written on
-              pieces of paper which other people can see.
-            </li>
+            <li>テキストをコピーしたり、フォームに入力するために、何度もテキストを見たり聞いたりしなければならない場合がある。</li>
+            <li>覚えておくことが出来るように、1つのパスワードを再利用したり、覚えやすいパスワードを使っている。</li>
+            <li>パスワードを変更したり、複雑なパスワードを使用したりする必要がある場合、他の人が見ることができる紙片に書くなどして、パスワードを安全に保管できないことがあります。</li>
           </ul>
-          <p>They may also struggle with other steps during login, such as:</p>
+          <p>また、ログインするときに、以下のようなステップで苦労することもあります：</p>
             <ul>
-            <li>entering characters in the correct order,</li>
-            <li>entering characters correctly with a limited number of tries (resulting in being locked out),</li>
-            <li>finding a PIN,</li>
-            <li>working out puzzles or distorted letters,</li>
-
-            <li>copy characters correctly from another device.</li> </ul>
-                      <p>Users can stop after getting frustrated with time-limited procedures or presentations of digital security tokens. Or they can be locked out of vital services because of their disability.</p>
-            <p>Without this design requirement, many people cannot use an application or content at all. See <a href="https://w3c.github.io/coga/issue-papers/privacy-security.html">Security and Privacy Technologies</a> issue paper for the full description of this issue, and how it stops people from using web services that are often critical. For example, many people cannot make doctors’ appointments, etc., by themselves. This may be partly responsible for the reduced life expectancy of people with learning and cognitive disabilities.</p>
+            <li>文字を正しい順序で入力する</li>
+            <li>限られた回数で正しく文字を入力する（ロックアウトされる）。</li>
+            <li>暗証番号を確認する。</li>
+            <li>パズルや歪んだ文字を読み解く。</li>
+            <li>他のデバイスから文字を正しくコピーする。</li></ul>
+                      <p>ユーザーは、時間制限のある手順やデジタルセキュリティトークンの提示に挫折してやめてしまうことがあります。また、障害があるために重要なサービスから締め出されることもあります。</p>
+            <p>この設計要件がなければ、多くの人がアプリケーションやコンテンツをまったく利用できないことになります。この問題の詳細については、「<a href="https://w3c.github.io/coga/issue-papers/privacy-security.html">Security and Privacy Technologies</a>」の論点書をご覧ください。また、この問題が、しばしば重要な意味を持つウェブサービスの利用をいかに妨げているかについても説明しています。例えば、多くの人は医者の予約などを自分で取ることができません。このことは、認知障害や学習障害がある人々の寿命が短くなる原因の一つかもしれません。</p>
           </section><section><h5 class="coga-5">詳細</h5>
-          <p>There are many ways to meet this design pattern:</p>
+          <p>このデザインパターンを満たすには、様々な方法があります：</p>
             <ul>
-            <li>Use <a href="https://www.w3.org/TR/webauthn/">Web Authentication: An
-<abbr title="application programming interface">API</abbr> for accessing Public Key Credentials</a> [[webauthn-2]] to support inclusive alternatives that do not rely on typical cognitive abilities. For example, hardware authentication devices, smartcard or FIDO.</li>
-            <li>Provide automatic user authentication based upon the use of a trusted device (to which the user has already logged in with their own identity). The user does not have to transcribe characters, but may have to press a link to identify they have the device.</li>
-            <li>Allow a biometrics option.</li>
-            <li>Use a system the user is already logged into via third-party authentication services (e.g., OAuth etc.).</li>
+            <li><a href="https://www.w3.org/TR/webauthn/">Web Authentication: An
+<abbr title="application programming interface">API</abbr> for accessing Public Key Credentials</a> [[webauthn-2]] を使用して、一般的な認知能力に依存しないインクルーシブな代替手段をサポートする。例えば、ハードウェア認証デバイス、スマートカード、FIDO など。</li>
+            <li>信頼できるデバイス（ユーザーが既に自分の ID でログインしている）を使用していることに基づいた、自動的なユーザー認証を提供する。ユーザーは文字を書き写す必要はないが、そのデバイスを持っていることを確認するためにリンクを押す必要がある場合がある。</li>
+            <li>生体認証オプションを許可する。</li>
+            <li>サードパーティの認証サービス（OAuth など）により、ユーザーが既にログインしているシステムを使用する。</li>
             </ul>
 			<p>
-              Methods of meeting requirements for alternative user
-              authentication would include:</p>
+              代替ユーザー認証の要件を満たす方法としては、以下のようなものが考えられます：</p>
               <ul>
                 <li>
-                  Clicking a link sent to an email address or a phone number.
-                  (Note that this is easy to implement and may be useful for
-                  minimal security, such as allowing comments on a blog.)
+                  メールアドレスや電話番号に送られたリンクをクリックする。(これは実装が簡単で、ブログのコメントを許可するような最小限のセキュリティに有用であることに注意してください)。
                 </li>
-                <li> Logging in by using information present in users’ personal documentation, such as the total number of a current account balance, with explanation on how to find this information. </li>
+                <li>現在の口座残高の合計数など、ユーザーの個人文書に存在する情報を使用してログインする。なお、この情報を見つける方法についての説明を添える。</li>
               </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
@@ -2635,15 +2621,15 @@
               <a href="https://www.w3.org/TR/webauthn/">Web Authentication: An
               <abbr title="application programming interface">API</abbr> for accessing Public Key Credentials</a> [[webauthn-2]].
             </li>
-            <li>Single Sign-on (SSO) that allow users to access many sites with a single login (federated login).</li>
-            <li>Two step authentication with Bluetooth links (no copying).</li>
-            <li>Quick Response Codes (QR Code).</li>
+            <li>ユーザーが1回のログイン(フェデレーション認証)で多くのサイトにアクセスできるようにするシングルサインオン(SSO)。</li>
+            <li>Bluetoothリンクによる2段階認証 (コピーなし)。</li>
+            <li>クイックレスポンスコード (QRコード)。</li>
           </ol>
                     <p><span class="avoid"></span><strong>避ける：</strong></p>
 
           <ol>
-            <li>Using two-step authentication that requires copying.</li>
-            <li>Using a password and not allowing pasting into the field.</li>
+            <li>コピーを必要とする2段階認証の使用。</li>
+            <li>パスワードを使用し、フィールドへの貼り付けを許可しない。</li>
           </ol>
       </section></section>
 
