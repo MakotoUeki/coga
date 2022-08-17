@@ -3089,41 +3089,38 @@
       </section></section>
 
       <section>
-        <h3>Provide Help for Forms and Non-standard Controls (Pattern)</h3>
+        <h3>フォームおよび標準的ではないコントロールに対してヘルプを提供する （パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need explanations for unusual controls in a form I find easy to use (such as a video or text).</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#task-management-user-story" aria-label="Task Management User Story">Task Management</a>.</p>
+        <blockquote><p>馴染みのない操作方法の説明を、自分が使いやすい形（ビデオやテキストなど）で説明してほしい。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#task-management-user-story">3.7.5 タスク管理</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
-          Provide help for any complex forms, particularly when there are
-          multiple steps, unusual interactions, non-standard controls, and
-          required fields that do not support autocomplete. Give examples
-		  that make it easy to understand what to do.
+          複雑なフォーム、特に複数のステップ、特殊なインタラクション、標準的ではないコントロール、オートコンプリートに対応していない必須項目がある場合は、ヘルプを提供する。何をすべきかを理解しやすくする例を提示する。
         </p>
 
           </section><section><h5 class="coga-5">メリット</h5>
           <p>
-            Users often find forms and related tasks to be the most complex experience with web sites. They can easily become confused, unsure, or even completely lost. Providing extra help can make the difference between being able to successfully complete a task and giving up. This is especially true if any part of the form is complex or requires nonstandard interactions.
+            ユーザーにとって、フォームやそれに関連するタスクは、ウェブサイトで最も複雑な経験となることがよくあります。そのため、ユーザーは簡単に混乱したり、自信がなくなったり、あるいは完全に分からなくなったりすることがあります。追加のヘルプを提供することによって、タスクを完了できるかあきらめるかの違いが生まれます。特に、フォームの一部が複雑であったり、標準的ではないインタラクションを必要とする場合は、そうです。
           </p>
           <p>
-            Many standard form controls provide support automatically. For example, many fields can be automatically filled in with information using autocomplete or personalization semantics [[personalization-semantics-content-1.0]]. Then the user will not make mistakes filling it out.
+            多くの標準的なフォームコントロールは、自動的にサポートを提供します。例えば、オートコンプリートやパーソナライズセマンティクス [[personalization-semantics-content-1.0]] を用いて、多くのフィールドに自動的に情報を入力することが可能です。そうすれば、ユーザーが入力ミスをすることはありません。
           </p>
           <p>
-            When you require additional fields and nonstandard controls many users will have difficulty using them. Many users with disabilities will get the information incorrect or be unable to work out how to complete the task. Often this results in the task being completely abandoned. In other cases, the user asks a caregiver for help to complete the form or work the control. In either case, they have not been able to complete the task because of their disability.
+            W追加のフィールドや標準的ではないコントロールを要求する場合、多くのユーザーはそれらを使用することが困難になるでしょう。障害があるユーザーの多くは、情報を間違って受け取るか、タスクを完了する方法を見つけることができません。その結果、タスクが完全に放棄されることがよくあります。また、ユーザーが介護者に助けを求めて、フォームに記入したり、コントロールを操作したりするケースもあります。いずれの場合も、障害があるためにタスクを完了することができなかったことになります。
           </p>
           <p>
-            The standard [[HTML]] forms and controls have been carefully specified for maximum usability and accessibility. They are usually understood by users, especially if they are familiar with web interactions. However, users are likely to experience difficulties if the standard form behavior has been altered or completely new controls are provided. Assuming the new behaviors have been carefully designed and user tested, users may still require help in order to successfully use them.
+            標準の[[HTML]]フォームとコントロールは、最大限のユーザビリティとアクセシビリティを実現するために、仕様書で慎重に定義されています。これらは、特にウェブのインタラクションに慣れているユーザーであれば、通常、理解することができます。しかし、標準的なフォームのふるまいが変更されたり、まったく新しいコントロールが提供されたりすると、ユーザーは困難に直面する可能性があります。新しいふるまいが慎重に設計され、ユーザーテストが行われたと仮定しても、ユーザーがそれらをうまく使うにはヘルプが必要な場合があります。
           </p>
 
           </section><section><h5 class="coga-5">詳細</h5>
 
-          <p>Examples of forms and controls that are likely to require additional help:</p>
+          <p>追加ヘルプが必要な可能性が高いフォームやコントロールの例：</p>
 
             <ul>
-            <li>Password fields that require certain character types of characters to be entered.</li>
-            <li>Surveys with complex interactions, for example, where buttons only appear depending on previous answers.</li>
-            <li>Date entry where there could be some ambiguity about the required format.</li>
-            <li>Custom controls like date pickers where some dates may be grayed out.</li>
+            <li>特定の文字種の入力が必要なパスワード欄。</li>
+            <li>複雑なインタラクションを伴うアンケート、例えば、直前の回答に応じてのみボタンが表示されるような場合。</li>
+            <li>日付の入力で、必要な書式があいまいな場合。</li>
+            <li>デートピッカーなどのカスタムコントロールで、一部の日付がグレーアウトしている場合。</li>
             </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
