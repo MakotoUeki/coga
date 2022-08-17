@@ -3284,56 +3284,44 @@
       </section></section>
 
       <section>
-        <h3>Provide Reminders (Pattern)</h3>
+        <h3>リマインダーを提供する （パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
-        <blockquote><p>I need reminders integrated into my calendar, otherwise I will forget appointments and when I am meant to do things. Sometimes I need reminders to revisit a web site to complete the next task.</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#support-user-story" aria-label="Support User Story">Support</a>.</p>
+        <blockquote><p>カレンダーにリマインダーが欲しい。そうしないと、約束の時間ややるべきことを忘れてしまう。また、次のタスクを完了するためにウェブサイトを再訪問するためのリマインダーが必要なときもある。</p></blockquote>
+        <p>関連するユーザーストーリー： <a href="#support-user-story">3.7.2 サポート</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
         <p>
-          Make it easy for the user to set a reminder for date and time sensitive events. Use standard application programming interfaces (APIs) when possible.
+          Mユーザーが日付や時間に関連するイベントのリマインダーを簡単に設定できるようにする。可能な限り標準的なアプリケーションプログラミングインターフェース（API）を使用すること。
         </p>
-        <p> Reminders must be set only at the user’s request and the user must be able to personalize the remainder method. </p>
+        <p>リマインダーはユーザーの要求があった場合のみ設定され、ユーザーはリマインダーの方法をパーソナライズすることができなければならない。</p>
 
           </section><section><h5 class="coga-5">メリット</h5>
           <p>
-            People with cognitive and learning disabilities often have challenges managing events and time. (In fact, being unable to correctly manage events and time without support is a diagnostic criterion for some groups of disabilities.)  This results in missing meetings, not submitting a request by a certain date or a form within a specified time period and missed opportunities. For example:
+            認知障害や学習障害がある人は、イベントや時間を管理するのが苦手なことがよくあります。(実際、サポートなしでイベントや時間を正しく管理できないことは、障害のグループの一部に関する診断基準になっています)。その結果、会議を欠席したり、特定の日付までにリクエストを提出しなかったり、指定された期間内にフォームを送信しなかったりして、機会を逃します。例えば：
           </p>
           <ul>
             <li>
-              When the user copies information into a calendar they often copy
-              the day or time incorrectly.
+              ユーザーがカレンダーに情報をコピーするとき、しばしば日付や時間を間違ってコピーしてしまう。
             </li>
             <li>
-              The user is challenged processing and retaining time based
-              information.
+              ユーザーは、時間ベースの情報を処理し、保持することが困難である。
             </li>
-            <li>The user may find it hard to sequence time-bound events.</li>
-            <li> The user’s skills decrease when tired to such an extent that they have to stop a task. They may wish to reschedule the task. </li>
+            <li>ユーザーは、期限があるイベントの順番を決めるのが難しいかもしれない。</li>
+            <li>タスクを中断しなければならないほど疲れているとき、ユーザーのスキルは低下する。タスクのリスケジュールを希望することがある。</li>
           </ul>
+          <p>カレンダー<abbr title="application programming interface">API</abbr>（またはタスクマネージャー）を使って、ユーザーが自分のカレンダーに自動的にイベントや締め切りを追加できるようにすることは、有効である。
+</p>
+          <p>例えば、認知障害や学習障害があるユーザーが、オンラインで医師の予約を入れたとします。彼らは、その詳細をカレンダーに間違ってコピーしてしまうことがよくあります。しかし、この場合、Webサイトにはカレンダーに予定を追加して、1時間前にリマインダーを設定するオプションがあったとします。ユーザーは、正しい時間に、正しい場所へ、正しい書類を持って来ることができます。</p>
           <p>
-            Using calendar
-<abbr title="application programming interface">APIs</abbr> (or task manager) that allow the user to
-            automatically add events and deadlines to their own calendar can
-            help.</p>
-          <p> For example, a user with a cognitive and learning disability sets a doctor’s appointment online. Often they copy the details incorrectly into their calendar. However, in this case, the web site gives them an option to add the appointment to the calendar and sets a reminder an hour before. The user now comes to the correct place at the correct time with the correct papers. </p>
-          <p>
-            The benefit to users with cognitive accessibility needs is that they
-            can independently manage appointments, deadlines, and schedules. The
-            ability to set reminders can reduce the cognitive load associated
-            when processing time bound tasks. Time dependent activities may be
-            monitored and tracked by the user to ensure that they are completed
-            in a timely manner.
+            認知に関するアクセシビリティのニーズがあるユーザーにとってのメリットは、予定、締め切り、スケジュールを自分で管理できることです。リマインダーを設定する機能により、期限があるタスクを処理する際の認知的負荷を軽減することができます。時間に依存したアクティビティは、タイムリーに完了するように、ユーザーが監視したり、追跡したりすることが可能です。
           </p>
           <p>
-            Always give the option to set a reminder at the end of the task so
-            that the user does not get interrupted.
+            ユーザーがタスクを中断されることがないように、タスクの最後にリマインダーを設定するオプションを常に提供してください。
           </p>
-          <p> It is essential not to add unwanted reminders, as this makes the user’s calendar too full. This can even prevent them from being able to use their calendar at all. The user is the best person to know how many reminders, and which type, will best meet their needs. </p>
+          <p>ユーザーのカレンダーがいっぱいになってしまうので、不要なリマインダーを追加しないようにすることが重要です。ユーザーは、カレンダーを全く使うことができなくなってしまう可能性さえあります。リマインダーの数やどんなタイプが自分のニーズに最も合致するかは、ユーザー自身が一番分かっているのです。</p>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <p>
-            Where a standard mechanism exists for the platform or technologies,
-            it must be used. See:
+            プラットフォームや技術に標準的なメカニズムが存在する場合は、それを使用する必要があります。以下を参照のこと：
           </p>
           <ul>
             <li>
@@ -3356,32 +3344,29 @@
             
           </ul>
           <p>
-            Date and time sensitive events are any event that has to be
-            completed by a certain time. The time constraints on such an event
-            may be defined by a calendar date and time or by the total elapsed
-            time.
+            日時を指定するイベントとは、ある特定の時刻までに完了しなければならないイベントのことです。このようなイベントの時間的制約は、カレンダーの日付と時間、または経過時間の合計によって定義されます。
           </p>
-          <p> Variables that could be considered include: </p>
+          <p>考慮されうる変数には、以下のものがあります：</p>
           <ul>
-            <li>Time - at a logical time.</li>
-            <li>Location - prompted when at an appropriate location.</li>
-            <li>Context - on computer vs. mobile, on specific a site, etc.</li>
+            <li>時間 - 論理的な時間。</li>
+            <li>場所 - 適切な場所にいるときに表示される。</li>
+            <li>コンテキスト - コンピュータかモバイルか、特定のサイトか、など。</li>
           </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
 <p><span class="use"></span><strong>用いる：</strong></p>              <ol>
-              <li>Options for the user to add the event to their calendar and set a reminder. For example:
+              <li>ユーザーがカレンダーにイベントを追加し、リマインダーを設定するためのオプション。例えば：
               <ul>
-              <li>A health care site allows you to set a local medical appointment. Once the appointment is set the user is given the option to add it to their calendar (automatically) with a reminder three hours before. They are also given the option to add or edit the reminder.</li>
+              <li>ヘルスケアサイトでは、地域の医療予約を設定することができる。一旦予約が設定されると、ユーザーはそれをカレンダーに（自動的に）追加し、3時間前にリマインダーを設定するオプションが与えられる。また、リマインダーの追加や編集も可能。</li>
               </ul>
               </li>
               </ol>
               <p><span class="avoid"></span><strong>避ける：</strong></p>
               <ol>
-              <li>Events that are added to the user’s calendar that the user does not want to attend.</li>
-              <li>The user cannot automatically add the events and appointments they just set to their calendar. For example:
+              <li>ユーザーのカレンダーに追加された、ユーザーが参加したくないイベント。</li>
+              <li>ユーザーが設定したばかりのイベントや予定を、自動的にカレンダーに追加することができない。例えば：
               <ul>
-              <li>A health care site allows you to set a local medical appointment. The user is not given the option to automatically add it to their calendar or set a reminder.</li>
+              <li>あるヘルスケアサイトでは、地域の診療予約を設定することができる。ユーザーには、それを自動的にカレンダーに追加したり、リマインダーを設定したりするオプションが与えられていない。</li>
               </ul>
               </li>
             </ol>
