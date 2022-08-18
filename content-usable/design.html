@@ -3380,85 +3380,68 @@
       <p>可能な限り、パーソナライゼーションと簡素化をサポートしましょう。アドオンや拡張機能を無効にしないでください。</p>
 
       <section>
-        <h3>Let Users Control When the Content Moves or Changes (Pattern)</h3>
+        <h3>コンテンツがいつ移動または変更されるかをユーザーが制御できるようにする（パターン）</h3>
         <section><h5 class="coga-5">ユーザーニーズ</h5>
         <blockquote><p>どこに何があるかを知りたい。コントロールとコンテンツは、私が使用しているときには予期せずに移動しない。</p></blockquote>
-        <p>関連するユーザーストーリー： <a href="#adapt-user-story" aria-label="Adapt User Story">Adapt</a>.</p>
+        <p>関連するユーザーストーリー： <a href="#adapt-user-story">3.8.1 適応</a></p>
         </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
          <p>
-          Ensure that changes of context, functionality, settings, route, and
-          orientation are initiated only by user request or an easily available
-          mechanism is available to turn off such changes. Also provide an easily available
-          mechanism to go to previous context, functionality,
-          settings, route, and orientation.
+          コンテキスト、機能、設定、ルート、方向などの変更は、ユーザーの要求によってのみ開始されるようにするか、そのような変更を簡単にオフにできるメカニズムを利用できるようにする。また、以前のコンテキスト、機能、設定、ルート、および方向に戻るための簡単に利用できるメカニズムを提供すること。
         </p>
 
           </section><section><h5 class="coga-5">メリット</h5>
           <p>
-            Any content, settings, or functionality which changes unexpectedly, without user initiation can result in significant problems for users with <a>cognitive and learning disabilities</a>. Unexpected changes in any of these areas can result in loss of focus, anxiety, or confusion in understanding or using a user interface (such as menus, buttons, and design components). Examples include, but are not limited to:
+            コンテンツ、設定、機能などがユーザーの意思によらず不意に変更されると、<a>認知障害や学習障害</a>があるユーザーにとって重大な問題になりえます。これらの予期せぬ変更は、ユーザーインターフェース（メニュー、ボタン、デザインコンポーネントなど）の理解または使用において、集中力の低下、不安、混乱を引き起こす可能性があるからです。例としては、以下のようなものが挙げられますが、これらに限定されるものではありません。
           </p>
           <ul>
-            <li>The automatic launching of new windows or pop-ups.</li>
-            <li>
-              Submission of forms through mechanisms other than a button that is clearly labeled (using simple language to submit the form).
-            </li>
-            <li>The opening of new content or a feature.</li>
-			<li>Unexpected changes when selecting an option.</li>
-			<li>Rerouting automatically by a Global Positioning System (GPS).</li>
-            <li>Changing the direction of a map in a <abbr title="Global Positioning System">GPS</abbr>.</li>
-
+            <li>新しいウィンドウやポップアップが自動的に起動すること。</li>
+            <li>（フォームを送信することが分かる平易な言葉を用いて）明確にラベル付けされたボタン以外の仕組みでフォームを送信すること。</li>
+            <li>新しいコンテンツや機能が開くこと。</li>
+            <li>オプション選択時の予期せぬ変更。</li>
+            <li><abbr title="Global Positioning System">GPS</abbr>（全地球測位システム）による自動リルート。</li>
+            <li>GPSで地図の向きを変更すること。</li>
           </ul>
           <p>
-            For example, a user may not have a sense of direction or know their
-            left and right. Before using a <abbr title="Global Positioning System">GPS</abbr>, they may study the route so that
-            they know approximately what they are doing and can augment the
-            directions of the <abbr title="Global Positioning System">GPS</abbr> with their own context, using the <abbr title="Global Positioning System">GPS</abbr> for
-            cues. The <abbr title="Global Positioning System">GPS</abbr> automatically reroutes them because of a small traffic
-            delay. They become completely lost and disoriented and can no
-            longer use the application.
+            例えば、あるユーザーは方向音痴で、自分の左右が分からないかもしれません。自分が何をしているかをおおよそ理解し、GPSを手がかりにして自分のコンテキストでGPSが示す道順を把握しやすくするために、GPSを使う前にルートを調べておくことがあります。GPSは、わずかな交通渋滞のために自動的にルートを変更します。そうすると、ユーザーは完全に道に迷って、方向感覚を失ってしまい、アプリケーションを使用できなくなる可能性があります。
           </p>
-		  <p>In another example, a user is watching a video and wants to press “like”. As they are about to press the button, the controls shift and they load a different video instead of pressing “like”. They are now less likely to press “like” because they do not want to lose their content. As a result, their preferences are not taken into account.</p>
+		  <p>別の例として、あるユーザーがビデオを見ていて、「いいね！」を押そうとしたとします。ボタンを押そうとすると、コントロールが移動し、「いいね！」を押せずに別の動画を読み込んでしまいました。ユーザーは自分のコンテンツを見失いたくないので、「いいね！」を押さなくなってしまいます。その結果、ユーザーの好みが反映さなくなります。</p>
           <p>
-            Letting users control when content changes gives users with <a>cognitive and learning disabilities</a> more control over how web sites and applications behave. This gives them the opportunity to make choices that enable them to use the content and complete the task.
+            コンテンツが変わるタイミングをユーザーがコントロールできるようにすれば、認知障害や学習障害があるユーザーが、ウェブサイトやアプリケーションのふるまいをよりコントロールしやすくなります。これにより、コンテンツを利用したり、タスクを完了したりできるようにするための選択をする機会をユーザーに提供できます。
           </p>
 
           </section><section><h5 class="coga-5">詳細</h5>
           <p>
-            Exception: The changes are part of an activity where it is essential
-            (e.g. a game).
+            例外：変更が、アクティビティにとって不可欠な部分である場合（例：ゲーム）。
           </p>
-          <p>Route: This is the directions and flow such as a <abbr title="Global Positioning System">GPS</abbr> route.</p>
-          <p>Orientation: perspective or view such as map direction.</p>
+          <p>ルート：GPSのルートなど、道案内や流れ。</p>
+          <p>オリエンテーション：地図の道案内など、全体像や表示です。</p>
           <p>
-            Easily available (or easily available mode or setting), is when one or more of the following is true:
+            簡単に利用できる（または、簡単に利用できるモードもしくは設定）というのは、以下のうち1つ以上が当てはまる場合です：
           </p>
           <ul>
             <li>
-              It can be set one time with as a wide a scope as possible (such as
-              using the standards of the  Operating System (OS), From [[ISO 9241-112]] or [[GPII]] when
-              available).
+              できるだけ広い範囲で一度に設定できる（オペレーティングシステム（OS）の規格を使用する。利用可能な場合は、[[ISO9241-112]]や[[GPII]]など）。
             </li>
             <li>
-              It has the option to save or to change the setting for the scope of the set of web pages.
+              対象となるウェブページの範囲を保存したり、設定を変更したりすることが可能なオプションがある。
             </li>
             <li>
-              It is reachable from each screen where it may be needed, and the path
-              and the control conforms to all of this document.
+              必要な各画面から到達可能であり、そのパスとコントロールは本ドキュメントの全てに適合している。
             </li>
           </ul>
 
           </section><section><h5 class="coga-5">事例</h5>
          <p><span class="use"></span><strong>用いる：</strong></p>
           <ol>
-          <li>User control when content changes. For example:
+          <li>コンテンツの変更に対するユーザーによる制御。例えば：
           <ul>
-          <li>The user can set to change the route if more than a specific amount of time is saved. They can add more information such as how many extra turns are acceptable for saving 5 minutes. When the <abbr title="Global Positioning System">GPS</abbr> finds a new route that saves time, the <abbr title="Global Positioning System">GPS</abbr> tells the user about the change including how many extra turns were added and how much time will be saved. The <abbr title="Global Positioning System">GPS</abbr> asks the user if they want to change the route or if the <abbr title="Global Positioning System">GPS</abbr> changed it, the user can go back to the original route in one touch or command.</li>
+          <li>ユーザーは「一定以上の時間を短縮できるなら、ルートを変更する」という設定にすることが可能。ユーザーは、5分短縮できるなら追加で何回曲がってもよい、などの情報をさらに追加できる。GPSは時間を短縮できる新しいルートを見つけたとき、追加される曲がり角の数と短縮できる時間を含めて、ユーザーに変更内容を通知する。GPSは、ユーザーがルートを変更したいかをユーザーに確認するか、またはGPSがルートを変更した場合、ユーザーはワンタッチまたはコマンドで元のルートに戻ることができる。</li>
           </ul>
           </li>
           </ol>
           <p><span class="avoid"></span><strong>避ける：</strong></p>
           <ol>
-          <li>Content that changes without the user having control.</li>
+          <li>ユーザーが制御できない変化をするコンテンツ。</li>
           </ol>
       </section></section>
 
