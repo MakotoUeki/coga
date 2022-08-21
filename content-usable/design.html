@@ -3613,59 +3613,55 @@
       </section></section>
 
       <section>
-              <h3>Support a Personalized and Familiar Interface (Pattern)</h3>
+              <h3>パーソナライズされていて、使い慣れたインターフェースをサポートする（パターン）</h3>
               <section><h5 class="coga-5">ユーザーニーズ</h5>
-              <blockquote><p>I need (a version of) a familiar interface, that I recognize and know what will happen.</p></blockquote>
-              <p>関連するユーザーストーリー： <a href="#adapt-user-story" aria-label="Adapt User Story">Adapt</a>.</p>
+              <blockquote><p>馴染みがあり、何が起こるかを知っている、使い慣れたインターフェイス (のバージョン) を提供してほしい。</p></blockquote>
+              <p>関連するユーザーストーリー： <a href="#adapt-user-story">3.8.1 適応</a></p>
               </section><section class="wtd"><h5 class="coga-5">やるべきこと</h5>
-              <p>Provide users with a way to personalize their interface to make it familiar.</p>
-              <p>This can be done by:</p>
+              <p>ユーザーに使い慣れたインターフェイスにするために、パーソナライズする方法を提供する。</p>
+              <p>これには次のような方法があります：</p>
                   <ol>
-                  <li>Allowing user preferences on presentation such as font style, font size, line heights, margins, and contrast. (Note: The default version should still be readable and use clear fonts.)</li>
-                  <li>Allowing a rollback to a previous interface that the user is familiar with and knows how to use.</li>
-                  <li>Adding semantics on controls, links, and symbols that allow the user to control the experience. For example:
+                  <li>フォントスタイル、フォントサイズ、行の高さ、余白、コントラストなどの表示に関するユーザーの好みを反映する。(注意: デフォルトのバージョンでも読みやすく、明瞭なフォントを使用する必要がある)。</li>
+                  <li>ユーザーが使い慣れていて、使い方を知っている以前のインターフェイスに戻せるようにする。</li>
+                  <li>コントロール、リンク、シンボルにセマンティクスを追加し、ユーザーがエクスペリエンスをコントロールできるようにする。例えば：
                   <ul>
-                  <li>HTML5 autocomplete on common fields,</li>
-                  <li>adding a toolbar that adds personalized images,</li>
-                  <li>use attributes in [[personalization-semantics-1.0]].</li>
+                  <li>一般的なフィールドにHTML5のautocomplete属性を設定する。</li>
+                  <li>パーソナライズされた画像を追加するツールバーを提供する。</li>
+                  <li>[[personalization-semantics-1.0]] の属性を使用する。</li>
                   </ul>
                     </li>
                   </ol>
-            <p>Ensure the user knows the personalization options and can easily configure them. Clear instructions can help. </p>
+            <p>ユーザーがパーソナライゼーションのオプションがあることを知って、簡単に設定できるようにする。明確な指示を出すこと。</p>
 
             </section><section><h5 class="coga-5">メリット</h5>
-            <p>Personalization changes the interface to meet the needs of the user.</p>
+            <p>パーソナライゼーションは、ユーザーのニーズに合わせてインターフェイスを変更します。</p>
 
-            <p>Having familiar terms and symbols is key to many users being able to use the web. However, what is familiar for one user may be unfamiliar to another requiring them to learn new symbols. Adding semantics allows symbols and support to be added by an extension or browser that is familiar to the individual user.</p>
-            <p>A stronger example is people using <abbr title="Alternative and Augmentative Communication System"><a>AAC</a></abbr>. These users usually only learn one symbol set. They cannot easily communicate with other people using <abbr title="Alternative and Augmentative Communication System"><a>AAC</a></abbr> in a written format or may struggle to understand different symbols used in different applications. When using personalization, such as [[personalization-semantics-1.0]] the user agents can load the symbols that are understandable by the individual user. The user can also access the Web and other applications.</p>
-
-
-            <p>Other support includes autocomplete and extensions that help the user fill out forms and understand the content. Many users with memory or <a>executive function</a> impairments cannot fill in forms without asking someone to help copy over information or check their work. Autocomplete allows many more users to manage forms by themselves.</p>
+            <p>多くのユーザーがウェブを使いこなせるようにするためには、馴染みがある用語や記号を用いることが重要です。しかし、あるユーザーにとっては馴染みがあるものでも、別のユーザーにとっては覚えなければならない新しい記号である場合があります。セマンティクスを追加することによって、個々のユーザーが使い慣れている拡張機能またはブラウザで記号およびサポートを追加することができます。</p>
+            <p>例えば、<abbr title="Alternative and Augmentative Communication System"><a>AAC</a></abbr>（代替・拡張コミュニケーションシステム）を使っている人たちです。彼らは、書面での AAC を使用して他の人と簡単にコミュニケーションをとることができません。また、様々なアプリケーションで使用される様々な記号を理解するのに苦労することがあります。[[Personalization-semantics-1.0]] のようなパーソナライゼーションを使用する場合、ユーザーエージェントは、個々のユーザーが理解できる記号を読み込むことができます。また、ユーザーはWebや他のアプリケーションを利用することもできます。
+</p>
+            <p>その他のサポートとしては、オートコンプリートや、ユーザーがフォームに記入したり、内容を理解するのに役立つ拡張機能なども挙げられます。記憶や遂行機能に障害があるユーザーの多くは、誰かに情報をコピーしてもらうか、自分の作業をチェックしてもらわないとフォーム入力を完了することができません。オートコンプリートによって、より多くのユーザーがフォームを自分で入力できるようになります。</p>
 
             </section><section><h5 class="coga-5">まずはじめに</h5>
             <ul>
-              <li>Use the HTML autocomplete tags on all common fields.</li>
-              <li>Add a toolbar that adds personalized images.</li>
-              <li>
-                Add the semantics that can work with a toolbar for personalized
-                images.
-              </li>
+              <li>すべてのよくある項目のフィールドでHTMLのautocomplete属性を使用する。</li>
+              <li>パーソナライズされた画像を追加するツールバーを提供する。</li>
+              <li>パーソナライズされた画像のためのツールバーが利用できるセマンティクスを追加する。</li>
             </ul>
 
             </section><section><h5 class="coga-5">事例</h5>
 
             <p><span class="use"></span><strong>用いる：</strong></p>
               <ol>
-              <li>[[HTML5]] autocomplete tags on all common fields.</li>
-              <li>True text to support browser preferences for styles.</li>
-              <li>A toolbar that adds personalized images.</li>
-              <li>Semantics that can work with a toolbar for personalized images or [[personalization-semantics-1.0]]. </li>
+              <li>よくある項目のフィールドに [HTML5]] のautocomplete属性を設定。</li>
+              <li>ブラウザのスタイル設定をサポートするテキスト。</li>
+              <li>パーソナライズされた画像を追加するツールバー。</li>
+              <li>パーソナライズされた画像のためのツールバーまたは [[personalization-semantics-1.0]] と連携できるセマンティクス。</li>
               </ol>
               <p><span class="avoid"></span><strong>避ける：</strong></p>
               <ol>
-              <li>Forms that do not support [[HTML5]] autocomplete.</li>
-              <li>Default fonts that are not clear or readable such as a cartoon font or gothic.</li>
-              <li>Pages that cannot easily be personalized.</li>
+              <li>[[HTML5]] のautocomplete属性に対応していないフォーム。</li>
+              <li>漫画向けのフォントやゴシック体など、明快で読みやすいとは言えないデフォルトのフォント。</li>
+              <li>簡単にパーソナライズできないページ</li>
               </ol>
       </section>
       </section>
